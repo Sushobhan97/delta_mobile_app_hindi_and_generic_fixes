@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime biedt een unieke mix van spelaanbiedingen waarbij gebruikers worden beloond voor het simpelweg besteden van tijd aan de spellen. Zorg er echter wel voor dat je ook door de levels van deze spellen heen speelt in plaats van alleen maar tijd te doden, anders kan de adverteerder de uitbetaling terugdraaien (hoewel dit zelden voorkomt).",
 	"offersGuidline8": "8). De mijlpalen/taken die je voltooit, worden meestal binnen enkele minuten na voltooiing geregistreerd op de offerwalls, maar in sommige gevallen kan dit tot drie uur duren. Wees daarom geduldig. Als de mijlpaal niet wordt geregistreerd, neem dan contact op met de klantenservice van het Offerwall-netwerk. Er is een aparte sectie voor klantenservice voor elke Offerwall die je bezoekt. Controleer altijd de offerwalls in onze app elke keer dat je een mijlpaal voltooit om er zeker van te zijn dat deze is bijgehouden.",
 	"offersGuidline9": "9). Als je geïnteresseerd bent in een game-/app-aanbieding, maar je had die game/app al op je apparaat geïnstalleerd, probeer dan niet op de aanbieding voor die app/game in te gaan. Je krijgt mogelijk geen tegoed voor je activiteit.",
-	"offersGuidline10": "10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren."
+	"offersGuidline10": "10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren.",
+	"termination": "Beëindiging",
+	"thisPeriodsSettlementIsterminated": "De afrekening van deze periode is beëindigd!",
+	"inactiveUsersX(rich)": "Inactieve gebruiker ${x}",
+	"remind": "herinneren!",
+	"offlineReminderOnlyOnce8hours_please": "Offline herinnering kan slechts één keer binnen 8 uur worden uitgevoerd! Wacht ${x} seconden en probeer het opnieuw.",
+	"noInactiveUsersFoundNow": "Geen inactieve gebruikers gevonden",
+	"successfullyNotifiedXpeople": "${x} mensen zijn succesvol op de hoogte gebracht!",
+	"deltansMiningReminder": "Herinnering aan Deltans Mining!",
+	"deltaFriendX_yourMiningHasStopped": "delta-vriend ${user}: \"Je mining is gestopt.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Het nummer dat je in de Delta-app hebt ingevoerd, was (${fillin}), maar het nummer waarmee je je verificatiestring hebt verzonden, was (${sender}). Pas dit aan en probeer het opnieuw.",
+	"decryptionError_pleaseTryAgain": "Fout bij het decoderen. Probeer het opnieuw!",
+	"reLogin": "Opnieuw inloggen"
 }

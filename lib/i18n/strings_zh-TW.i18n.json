@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime 提供獨特的遊戲組合，用戶只需在遊戲中投入時間即可獲得獎勵。但是，請確保您在這些遊戲中也不斷升級，而不是僅僅消磨時間，否則廣告商可能會撤銷付款（儘管這種情況很少見）。",
 	"offersGuidline8": "8). 您完成的里程碑/任務通常會在幾分鐘內記錄在積分牆上，但在某些情況下，可能需要長達三個小時，因此請耐心等待。若里程碑未記錄，請聯絡積分牆網路的客服。您造訪的每個積分牆上都有單獨的客服專區。每次完成里程碑後，請務必在我們的應用程式中查看積分牆，以確保其已被追蹤。",
 	"offersGuidline9": "9). 如果您對某個遊戲/應用程式的優惠感興趣，但您的裝置之前已安裝該遊戲/應用，請勿嘗試與該應用程式/遊戲相關的優惠。您可能無法獲得相應活動積分。",
-	"offersGuidline10": "10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。"
+	"offersGuidline10": "10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。",
+	"termination": "終止",
+	"thisPeriodsSettlementIsterminated": "本期結算結算終止!",
+	"inactiveUsersX(rich)": "不活躍用戶${x}",
+	"remind": "提醒！",
+	"offlineReminderOnlyOnce8hours_please": "8小時內只能執行一次離線提醒！請再等待${x}秒之後再試。",
+	"noInactiveUsersFoundNow": "現在沒發現不活躍用戶",
+	"successfullyNotifiedXpeople": "已成功通知${x}人！",
+	"deltansMiningReminder": "Deltans挖礦提醒！",
+	"deltaFriendX_yourMiningHasStopped": "delta好友${user}：“您的挖礦已停止.”",
+	"inputAndActualNumberDoNotMatch(rich)": "您在 Delta 應用程式上輸入的號碼是 (${fillin})，但您發送驗證字串時使用的號碼是 (${sender})。請調整後重試。",
+	"decryptionError_pleaseTryAgain": "解密出錯，請重試！",
+	"reLogin": "重新登入"
 }

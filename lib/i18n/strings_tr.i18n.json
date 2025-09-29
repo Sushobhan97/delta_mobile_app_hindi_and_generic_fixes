@@ -608,5 +608,17 @@
 	"offersGuidline7": "7). PlayTime, kullanıcıların yalnızca oyunlarda zaman geçirmeleri karşılığında ödüllendirildiği benzersiz bir oyun teklifi yelpazesi sunar. Ancak, lütfen sadece zaman öldürmek yerine, bu oyunlardaki seviyelerde ilerlediğinizden emin olun, aksi takdirde reklamveren ödemeyi geri alabilir (nadir de olsa).",
 	"offersGuidline8": "8). Tamamladığınız kilometre taşları/görevler genellikle tamamlandıktan sonra birkaç dakika içinde offerwall'lara kaydedilir, ancak bazı durumlarda üç saate kadar sürebilir, bu nedenle lütfen bu gibi durumlarda sabırlı olun. Kilometre taşı kaydedilmezse, lütfen Offerwall ağıyla ilgili müşteri desteğiyle iletişime geçin. Eriştiğiniz her Offerwall'da Müşteri Desteği için ayrı bir bölüm bulunur. Bir kilometre taşını tamamladığınızda, takip edildiğinden emin olmak için uygulamamızdaki offerwall'ları kontrol ettiğinizden emin olun.",
 	"offersGuidline9": "9). Bir oyun/uygulama teklifiyle ilgileniyorsanız, ancak söz konusu oyun/uygulama daha önce cihazınıza yüklenmişse, lütfen söz konusu uygulama/oyunla ilgili teklifi denemeyin. Etkinliğiniz için kredi alamayabilirsiniz.",
-	"offersGuidline10": "10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir."
+	"offersGuidline10": "10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir.",
+	"termination": "Fesih",
+	"thisPeriodsSettlementIsterminated": "Bu dönemin yerleşimi sona ermiştir!",
+	"inactiveUsersX(rich)": "Etkin olmayan kullanıcı ${x}",
+	"remind": "hatırlatmak!",
+	"offlineReminderOnlyOnce8hours_please": "Çevrimdışı hatırlatma 8 saat içinde yalnızca bir kez çalıştırılabilir! Lütfen ${x} saniye bekleyin ve tekrar deneyin.",
+	"noInactiveUsersFoundNow": "Etkin olmayan kullanıcı bulunamadı",
+	"successfullyNotifiedXpeople": "${x} kişiye başarıyla bildirim gönderildi!",
+	"deltansMiningReminder": "Deltans Madencilik Hatırlatması!",
+	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Madenciliğiniz durduruldu.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Delta uygulamasına girdiğiniz numara (${fillin}) idi, ancak doğrulama dizenizi gönderdiğiniz numara (${sender}) idi. Lütfen bunu düzeltip tekrar deneyin.",
+	"decryptionError_pleaseTryAgain": "Şifre çözme hatası, lütfen tekrar deneyin!",
+	"reLogin": "Tekrar giriş yapın"
 }

@@ -253,3 +253,7 @@
 -keep class com.jd.ad.sdk.** { *; }
 #-------------- 京东 end-------------
 
+-keep class com.mob.**{*;}
+-dontwarn com.mob.**
+-keep class cn.fly.**{*;}
+-dontwarn cn.fly.**

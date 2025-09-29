@@ -608,5 +608,17 @@
 	"offersGuidline7": "7). PlayTime oferă o combinație unică de oferte de jocuri în care utilizatorii sunt recompensați pur și simplu pentru timpul petrecut în jocuri. Cu toate acestea, asigurați-vă că progresați și voi înșivă prin nivelurile din aceste jocuri, în loc să pierdeți timpul, altfel agentul de publicitate ar putea anula plata (deși acest lucru este rar).",
 	"offersGuidline8": "8). Etapele/sarcinile finalizate de dvs. sunt de obicei înregistrate pe Offerwall-uri în câteva minute de la finalizare, dar în anumite cazuri, poate dura până la trei ore, așa că vă rugăm să aveți răbdare în astfel de cazuri. Dacă etapa nu este înregistrată, vă rugăm să contactați serviciul de asistență pentru clienți din rețeaua Offerwall. Există o secțiune separată pentru Asistență pentru clienți pe fiecare Offerwall pe care îl accesați. Asigurați-vă întotdeauna că verificați ofertewall-urile din aplicația noastră de fiecare dată când finalizați o etapă pentru a vă asigura că a fost urmărită.",
 	"offersGuidline9": "9). În cazul în care sunteți interesat de o ofertă pentru un joc/o aplicație, dar ați avut anterior jocul/aplicația respectivă instalată pe dispozitiv, vă rugăm să nu încercați oferta aferentă aplicației/jocului respectiv. Este posibil să nu fiți creditat pentru activitatea dvs.",
-	"offersGuidline10": "10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor."
+	"offersGuidline10": "10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor.",
+	"termination": "Terminare",
+	"thisPeriodsSettlementIsterminated": "Decontarea pentru această perioadă s-a încheiat!",
+	"inactiveUsersX(rich)": "Utilizator inactiv ${x}",
+	"remind": "reaminti!",
+	"offlineReminderOnlyOnce8hours_please": "Memento-ul offline poate fi executat o singură dată în 8 ore! Vă rugăm să așteptați ${x} secunde și să încercați din nou.",
+	"noInactiveUsersFoundNow": "Nu au fost găsiți utilizatori inactivi",
+	"successfullyNotifiedXpeople": "${x} persoane au fost notificate cu succes!",
+	"deltansMiningReminder": "Memento pentru mineritul Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: „Mineritul ți s-a oprit.”",
+	"inputAndActualNumberDoNotMatch(rich)": "Numărul introdus în aplicația Delta a fost (${fillin}), dar numărul folosit pentru a trimite șirul de verificare a fost (${sender}). Vă rugăm să ajustați această valoare și să încercați din nou.",
+	"decryptionError_pleaseTryAgain": "Eroare de decriptare, vă rugăm să încercați din nou!",
+	"reLogin": "Conectați-vă din nou"
 }

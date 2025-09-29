@@ -609,5 +609,17 @@
 	"offersGuidline7": "7) PlayTime propose une offre unique de jeux où les utilisateurs sont récompensés simplement pour leur temps passé sur les jeux. Cependant, assurez-vous de progresser dans les niveaux de ces jeux au lieu de simplement tuer le temps, sinon l'annonceur pourrait annuler le paiement (bien que cela soit rare).",
 	"offersGuidline8": "8) Les étapes/tâches que vous avez complétées sont généralement enregistrées sur les Offerwalls quelques minutes après leur achèvement, mais dans certains cas, cela peut prendre jusqu'à trois heures ; veuillez donc patienter. Si l'étape n'est pas enregistrée, veuillez contacter le service client du réseau Offerwall. Une section dédiée au service client est disponible sur chaque Offerwall auquel vous accédez. Assurez-vous de toujours consulter les Offerwalls dans notre application chaque fois que vous franchissez une étape pour vous assurer qu'elle a bien été suivie.",
 	"offersGuidline9": "9) Si vous êtes intéressé par une offre de jeu ou d'application, mais que vous l'aviez déjà installée sur votre appareil, veuillez ne pas tenter de participer à l'offre correspondante. Votre activité pourrait ne pas être créditée.",
-	"offersGuidline10": "10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres."
+	"offersGuidline10": "10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres.",
+	"termination": "Terminaison",
+	"thisPeriodsSettlementIsterminated": "Le règlement de cette période est terminé !",
+	"inactiveUsersX(rich)": "Utilisateur inactif ${x}",
+	"remind": "rappeler!",
+	"offlineReminderOnlyOnce8hours_please": "Le rappel hors ligne ne peut être exécuté qu'une seule fois en 8 heures ! Veuillez patienter ${x} secondes et réessayer.",
+	"noInactiveUsersFoundNow": "Aucun utilisateur inactif trouvé",
+	"successfullyNotifiedXpeople": "${x} personnes ont été notifiées avec succès !",
+	"deltansMiningReminder": "Rappel sur l'exploitation minière de Deltans !",
+	"deltaFriendX_yourMiningHasStopped": "ami delta ${user} : « Votre minage s'est arrêté. »",
+	"inputAndActualNumberDoNotMatch(rich)": "Le numéro saisi dans l'application Delta était (${fillin}), mais le numéro utilisé pour envoyer votre chaîne de vérification était (${sender}). Veuillez ajuster ce paramètre et réessayer.",
+	"decryptionError_pleaseTryAgain": "Erreur de décryptage, veuillez réessayer !",
+	"reLogin": "Connectez-vous à nouveau"
 }

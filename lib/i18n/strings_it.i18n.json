@@ -608,5 +608,17 @@
 	"offersGuidline7": "7). PlayTime offre un mix unico di offerte di gioco in cui gli utenti vengono premiati semplicemente per il tempo trascorso giocando. Tuttavia, assicurati di progredire nei livelli di questi giochi invece di limitarti a perdere tempo, altrimenti l'inserzionista potrebbe annullare il pagamento (anche se è raro).",
 	"offersGuidline8": "8). Le milestone/attività completate vengono solitamente registrate su tutti gli offerwall entro pochi minuti dal completamento, ma in alcuni casi potrebbero essere necessarie fino a tre ore, quindi sii paziente in questi casi. Se la milestone non viene registrata, contatta l'assistenza clienti della rete Offerwall. È presente una sezione dedicata all'assistenza clienti in ogni Offerwall a cui accedi. Assicurati sempre di controllare gli offerwall all'interno della nostra app ogni volta che completi una milestone per assicurarti che sia stata tracciata.",
 	"offersGuidline9": "9) Se sei interessato a un'offerta relativa a un gioco/app, ma in precedenza avevi installato quel gioco/app sul tuo dispositivo, ti preghiamo di non tentare l'offerta relativa a quell'app/gioco. Potresti non ricevere alcun accredito per la tua attività.",
-	"offersGuidline10": "10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte."
+	"offersGuidline10": "10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte.",
+	"termination": "Risoluzione",
+	"thisPeriodsSettlementIsterminated": "Il periodo di liquidazione è terminato!",
+	"inactiveUsersX(rich)": "Utente inattivo ${x}",
+	"remind": "ricordare!",
+	"offlineReminderOnlyOnce8hours_please": "Il promemoria offline può essere eseguito solo una volta ogni 8 ore! Attendi ${x} secondi e riprova.",
+	"noInactiveUsersFoundNow": "Nessun utente inattivo trovato",
+	"successfullyNotifiedXpeople": "${x} persone sono state avvisate con successo!",
+	"deltansMiningReminder": "Promemoria per l'attività mineraria dei Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "amico delta ${user}: \"Il tuo mining è stato interrotto.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Il numero inserito nell'app Delta era (${fillin}), ma il numero da cui hai inviato la stringa di verifica era (${sender}). Modifica questo valore e riprova.",
+	"decryptionError_pleaseTryAgain": "Errore di decrittazione, riprova!",
+	"reLogin": "Accedi di nuovo"
 }

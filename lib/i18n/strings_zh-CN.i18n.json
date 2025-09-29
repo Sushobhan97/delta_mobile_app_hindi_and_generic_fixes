@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime 提供独特的游戏组合，用户只需在游戏中投入时间即可获得奖励。但是，请确保您在这些游戏中也不断升级，而不是仅仅消磨时间，否则广告商可能会撤销支付（尽管这种情况很少见）。",
 	"offersGuidline8": "8). 您完成的里程碑/任务通常会在几分钟内记录在积分墙上，但在某些情况下，可能需要长达三个小时，因此请耐心等待。如果里程碑未记录，请联系积分墙网络的客服。您访问的每个积分墙上都有单独的客服专区。每次完成里程碑后，请务必在我们的应用程序中查看积分墙，以确保其已被追踪。",
 	"offersGuidline9": "9). 如果您对某个游戏/应用的优惠感兴趣，但您的设备之前已安装该游戏/应用，请勿尝试与该应用/游戏相关的优惠。您可能无法获得相应活动积分。",
-	"offersGuidline10": "10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。"
+	"offersGuidline10": "10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。",
+	"termination": "终止",
+	"thisPeriodsSettlementIsterminated": "本期结算结算终止!",
+	"inactiveUsersX(rich)": "不活跃用户${x}",
+	"remind": "提醒！",
+	"offlineReminderOnlyOnce8hours_please": "8小时内只能执行一次离线提醒！请再等待${x}秒之后再试。",
+	"noInactiveUsersFoundNow": "现在没发现不活跃用户",
+	"successfullyNotifiedXpeople": "已成功通知${x}人！",
+	"deltansMiningReminder": "Deltans挖矿提醒！",
+	"deltaFriendX_yourMiningHasStopped": "delta好友${user}：“您的挖矿已停止.”",
+	"inputAndActualNumberDoNotMatch(rich)": "您在 Delta 应用程序上输入的号码是 (${fillin})，但您发送验证字符串时使用的号码是 (${sender})。请调整后重试。",
+	"decryptionError_pleaseTryAgain": "解密出错，请重试！",
+	"reLogin": "重新登录"
 }

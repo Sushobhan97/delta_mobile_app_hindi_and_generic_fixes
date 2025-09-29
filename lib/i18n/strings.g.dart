@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 25
-/// Strings: 15167 (606 per locale)
+/// Strings: 15467 (618 per locale)
 ///
-/// Built on 2025-09-10 at 08:05 UTC
+/// Built on 2025-09-28 at 02:25 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -883,6 +883,27 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	String get offersGuidline8 => '8). The milestones/tasks completed by you are usually registered across the offerwalls within a few minutes of completion, but in certain cases, it may take up to three hours, so please be patient in such cases. If the milestone doesn’t get registered, please reach out to the customer support pertaining to the Offerwall network. There’s a separate section for Customer Support across every Offerwall you access. Always ensure you check the offerwalls within our app every time you finish a milestone to ensure it has been tracked.';
 	String get offersGuidline9 => '9). In case you’re interested in a game/app offer, but you previously had that game/app installed in your device, please don’t attempt the offer pertaining to that app/game. You may not get credited for your activity.';
 	String get offersGuidline10 => '10). Always read the tips provided by each Offerwall. They often contain crucial details that can help maximize your chances of successful tracking across the offers.';
+	String get termination => 'Termination';
+	String get thisPeriodsSettlementIsterminated => 'This period\'s settlement is terminated!';
+	TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Inactive user '),
+		x,
+	]);
+	String get remind => 'remind!';
+	String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Offline reminder can only be executed once within 8 hours! Please wait ${x} seconds and try again.';
+	String get noInactiveUsersFoundNow => 'No inactive users found';
+	String successfullyNotifiedXpeople({required Object x}) => '${x} people have been notified successfully!';
+	String get deltansMiningReminder => 'Deltans Mining Reminder!';
+	String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Your mining has stopped."';
+	TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'The number you\'ve entered on the Delta app is ('),
+		fillin,
+		const TextSpan(text: ') but the number with which you\'ve sent the verification string is ('),
+		sender,
+		const TextSpan(text: '). Please adjust them and try again.'),
+	]);
+	String get decryptionError_pleaseTryAgain => 'Decryption error, please try again!';
+	String get reLogin => 'Log in again';
 }
 
 // Path: <root>
@@ -1621,6 +1642,27 @@ class _StringsBg implements Translations {
 	@override String get offersGuidline8 => '8). Завършените от вас етапи/задачи обикновено се регистрират в офертните стени в рамките на няколко минути след завършването им, но в определени случаи това може да отнеме до три часа, така че, моля, бъдете търпеливи. Ако етапът не се регистрира, моля, свържете се с отдела за обслужване на клиенти на мрежата на Offerwall. Има отделен раздел за обслужване на клиенти във всеки Offerwall, до който имате достъп. Винаги проверявайте офертните стени в нашето приложение всеки път, когато завършите етап, за да се уверите, че е проследен.';
 	@override String get offersGuidline9 => '9). В случай че се интересувате от оферта за игра/приложение, но преди това сте имали инсталирана тази игра/приложение на устройството си, моля, не се възползвайте от офертата, отнасяща се до това приложение/игра. Възможно е да не получите кредит за активността си.';
 	@override String get offersGuidline10 => '10). Винаги четете съветите, предоставени от всяка Offerwall. Те често съдържат важни подробности, които могат да ви помогнат да увеличите максимално шансовете си за успешно проследяване на офертите.';
+	@override String get termination => 'Прекратяване';
+	@override String get thisPeriodsSettlementIsterminated => 'Сметката за този период е прекратена!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Неактивен потребител '),
+		x,
+	]);
+	@override String get remind => 'напомни!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Напомнянето офлайн може да се изпълни само веднъж в рамките на 8 часа! Моля, изчакайте ${x} секунди и опитайте отново.';
+	@override String get noInactiveUsersFoundNow => 'Не са намерени неактивни потребители';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} души са били успешно уведомени!';
+	@override String get deltansMiningReminder => 'Напомняне за минното дело в Делта!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'делта приятел ${user}: "Добивът ви е спрян."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Номерът, който въведохте в приложението Delta, беше ('),
+		fillin,
+		const TextSpan(text: ', но номерът, който използвахте за изпращане на низа за потвърждение, беше ('),
+		sender,
+		const TextSpan(text: '). Моля, коригирайте го и опитайте отново.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Грешка при дешифриране, моля опитайте отново!';
+	@override String get reLogin => 'Влезте отново';
 }
 
 // Path: <root>
@@ -2362,6 +2404,27 @@ class _StringsBn implements Translations {
 	@override String get offersGuidline8 => '৮)। আপনার দ্বারা সম্পন্ন মাইলস্টোন/কাজগুলি সাধারণত অফারওয়ালগুলিতে কয়েক মিনিটের মধ্যে নিবন্ধিত হয়, তবে কিছু ক্ষেত্রে, এটি তিন ঘন্টা পর্যন্ত সময় নিতে পারে, তাই এই ক্ষেত্রে ধৈর্য ধরুন। যদি মাইলস্টোনটি নিবন্ধিত না হয়, তাহলে অনুগ্রহ করে অফারওয়াল নেটওয়ার্ক সম্পর্কিত গ্রাহক সহায়তার সাথে যোগাযোগ করুন। আপনার অ্যাক্সেস করা প্রতিটি অফারওয়ালে গ্রাহক সহায়তার জন্য একটি পৃথক বিভাগ রয়েছে। আপনি যখনই কোনও মাইলস্টোন সম্পূর্ণ করেন তখন তা ট্র্যাক করা হয়েছে কিনা তা নিশ্চিত করার জন্য সর্বদা আমাদের অ্যাপের মধ্যে অফারওয়ালগুলি পরীক্ষা করে দেখুন।';
 	@override String get offersGuidline9 => '৯). যদি আপনি কোনও গেম/অ্যাপ অফারে আগ্রহী হন, কিন্তু আপনার ডিভাইসে সেই গেম/অ্যাপটি আগে ইনস্টল করা থাকে, তাহলে অনুগ্রহ করে সেই অ্যাপ/গেম সম্পর্কিত অফারটি ব্যবহার করার চেষ্টা করবেন না। আপনার কার্যকলাপের জন্য আপনাকে ক্রেডিট নাও দেওয়া হতে পারে।';
 	@override String get offersGuidline10 => '১০). প্রতিটি অফারওয়ালের দেওয়া টিপসগুলি সর্বদা পড়ুন। এগুলিতে প্রায়শই গুরুত্বপূর্ণ বিবরণ থাকে যা অফারগুলি জুড়ে সফলভাবে ট্র্যাক করার সম্ভাবনা সর্বাধিক করতে সাহায্য করতে পারে।';
+	@override String get termination => 'সমাপ্তি';
+	@override String get thisPeriodsSettlementIsterminated => 'এই সময়ের নিষ্পত্তির অবসান!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'নিষ্ক্রিয় ব্যবহারকারী '),
+		x,
+	]);
+	@override String get remind => 'মনে করিয়ে দিন!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'অফলাইন রিমাইন্ডার ৮ ঘন্টার মধ্যে শুধুমাত্র একবার কার্যকর করা যাবে! অনুগ্রহ করে ${x} সেকেন্ড অপেক্ষা করুন এবং আবার চেষ্টা করুন।';
+	@override String get noInactiveUsersFoundNow => 'কোনও নিষ্ক্রিয় ব্যবহারকারী খুঁজে পাওয়া যায়নি';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} জনকে সফলভাবে অবহিত করা হয়েছে!';
+	@override String get deltansMiningReminder => 'ডেল্টানস মাইনিং অনুস্মারক!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'ডেল্টা বন্ধু ${user}: "আপনার মাইনিং বন্ধ হয়ে গেছে।"';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'ডেল্টা অ্যাপে আপনি যে নম্বরটি লিখেছেন তা ছিল ('),
+		fillin,
+		const TextSpan(text: '), কিন্তু যাচাইকরণ স্ট্রিংটি পাঠানোর জন্য আপনি যে নম্বরটি ব্যবহার করেছেন তা ছিল ('),
+		sender,
+		const TextSpan(text: ')। অনুগ্রহ করে এটি সামঞ্জস্য করুন এবং আবার চেষ্টা করুন।'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'ডিক্রিপশন ত্রুটি, আবার চেষ্টা করুন!';
+	@override String get reLogin => 'আবার লগ ইন করুন';
 }
 
 // Path: <root>
@@ -3101,6 +3164,27 @@ class _StringsCkb implements Translations {
 	@override String get offersGuidline8 => '8). ئەو بەربەستە گرنگانە/ئەرکانەی کە لەلایەن تۆوە تەواو دەکرێن بەزۆری لە سەرانسەری دیوارەکانی ئۆفەرەکاندا تۆمار دەکرێن لە ماوەی چەند خولەکێکدا دوای تەواوبوون، بەڵام لە هەندێک حاڵەتدا، لەوانەیە تا سێ کاتژمێر بخایەنێت، بۆیە تکایە سەبر بگرە لەم جۆرە حاڵەتانەدا. ئەگەر ئەو بڕگەیە تۆمار نەکرا، تکایە دەستت بگات بە پشتگیری کڕیار کە پەیوەندی بە تۆڕی ئۆفەروالەوە هەیە. بەشێکی جیاواز هەیە بۆ پشتگیری کڕیار لە سەرانسەری هەموو دیوارە ئۆفەرێکدا کە دەستت پێدەگات. هەمیشە دڵنیابە کە هەر جارێک کە بڕگەیەکی گرنگ تەواو دەکەیت، دیوارەکانی ئۆفەرەکان لەناو ئەپەکەماندا دەپشکنیت بۆ ئەوەی دڵنیا بیت کە بەدواداچوونی بۆ کراوە.';
 	@override String get offersGuidline9 => '9). لە ئەگەری ئەوەی کە تۆ ئارەزووی ئۆفەرێکی یاری/ئەپێک دەکەیت، بەڵام پێشتر ئەو یارییە/ئەپەت لە ئامێرەکەتدا دامەزراندبوو، تکایە هەوڵی ئەو ئۆفەرە مەدە کە پەیوەندی بەو ئەپ/یارییەوە هەیە. لەوانەیە تۆ کریدت بۆ چالاکییەکەت وەرنەگیرێت.';
 	@override String get offersGuidline10 => '10). هەمیشە ئەو ئامۆژگارییانە بخوێنەرەوە کە لەلایەن هەر ئۆفەروالێکەوە پێشکەش کراوە. زۆرجار وردەکاری گرنگیان تێدایە کە دەتوانن یارمەتیدەر بن بۆ زۆرترین چانسی بەدواداچوونی سەرکەوتووت لە سەرانسەری ئۆفەرەکاندا.';
+	@override String get termination => 'کۆتاییهێنان بە کۆتایی';
+	@override String get thisPeriodsSettlementIsterminated => 'یەکلاکردنەوەی ئەم ماوەیە کۆتایی پێهات!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'بەکارهێنەری ناچالاک '),
+		x,
+	]);
+	@override String get remind => 'بیرخستنەوە!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'بیرخستنەوەی ئۆفلاین تەنها جارێک دەتوانرێت لە ماوەی ٨ کاتژمێردا جێبەجێ بکرێت! تکایە ${x} چرکە چاوەڕێ بکە و دووبارە هەوڵبدەرەوە.';
+	@override String get noInactiveUsersFoundNow => 'هیچ بەکارهێنەرێکی ناچالاک نەدۆزراوەتەوە';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} کەسەکان بە سەرکەوتوویی ئاگادارکراونەتەوە!';
+	@override String get deltansMiningReminder => 'بیرخستنەوەی کانزاکانی دێڵتانس!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "کانگاکەت وەستاوە."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'ئەو ژمارەیەی کە لە ئەپی Delta داتنووسی ('),
+		fillin,
+		const TextSpan(text: ') بوو، بەڵام ئەو ژمارەیەی کە بەکاری هێنا بۆ ناردنی ڕیزەکەی پشتڕاستکردنەوە ('),
+		sender,
+		const TextSpan(text: ') بوو. تکایە ئەمە ڕێکبخە و دووبارە هەوڵبدەرەوە.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'هەڵەی کۆدکردنەوە، تکایە دووبارە هەوڵبدەرەوە!';
+	@override String get reLogin => 'دووبارە بچۆرەوە ژوورەوە';
 }
 
 // Path: <root>
@@ -3840,6 +3924,27 @@ class _StringsDe implements Translations {
 	@override String get offersGuidline8 => '8). Die von Ihnen abgeschlossenen Meilensteine/Aufgaben werden in der Regel innerhalb weniger Minuten nach Abschluss in den Offerwalls registriert. In Einzelfällen kann es jedoch bis zu drei Stunden dauern. Bitte haben Sie in solchen Fällen Geduld. Sollte der Meilenstein nicht registriert werden, wenden Sie sich bitte an den Kundensupport des Offerwall-Netzwerks. Für jede Offerwall, auf die Sie zugreifen, gibt es einen separaten Bereich für den Kundensupport. Überprüfen Sie die Offerwalls in unserer App nach jedem abgeschlossenen Meilenstein, um sicherzustellen, dass dieser erfasst wurde.';
 	@override String get offersGuidline9 => '9). Falls Sie an einem Spiel-/App-Angebot interessiert sind, dieses Spiel/diese App aber bereits auf Ihrem Gerät installiert haben, versuchen Sie bitte nicht, das entsprechende Angebot in Anspruch zu nehmen. Möglicherweise erhalten Sie für Ihre Aktivität keine Gutschrift.';
 	@override String get offersGuidline10 => '10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren.';
+	@override String get termination => 'Beendigung';
+	@override String get thisPeriodsSettlementIsterminated => 'Die Abrechnung für diesen Zeitraum ist beendet!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Inaktiver Benutzer '),
+		x,
+	]);
+	@override String get remind => 'erinnern!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Die Offline-Erinnerung kann nur einmal innerhalb von 8 Stunden ausgeführt werden! Bitte warten Sie ${x} Sekunden und versuchen Sie es erneut.';
+	@override String get noInactiveUsersFoundNow => 'Keine inaktiven Benutzer gefunden';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} Personen wurden erfolgreich benachrichtigt!';
+	@override String get deltansMiningReminder => 'Deltans Mining-Erinnerung!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Ihr Mining wurde gestoppt."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Die Nummer, die Sie in der Delta-App eingegeben haben, war ('),
+		fillin,
+		const TextSpan(text: '), aber die Nummer, von der Sie Ihre Bestätigungszeichenfolge gesendet haben, war ('),
+		sender,
+		const TextSpan(text: '). Bitte korrigieren Sie diese Nummer und versuchen Sie es erneut.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Entschlüsselungsfehler, bitte versuchen Sie es erneut!';
+	@override String get reLogin => 'Melden Sie sich erneut an';
 }
 
 // Path: <root>
@@ -4579,6 +4684,27 @@ class _StringsEl implements Translations {
 	@override String get offersGuidline8 => '8). Τα ορόσημα/εργασίες που ολοκληρώνετε συνήθως καταγράφονται στα τείχη προσφορών εντός λίγων λεπτών από την ολοκλήρωσή τους, αλλά σε ορισμένες περιπτώσεις, μπορεί να χρειαστούν έως και τρεις ώρες, γι\' αυτό παρακαλούμε να είστε υπομονετικοί σε αυτές τις περιπτώσεις. Εάν το ορόσημο δεν καταχωρηθεί, επικοινωνήστε με την υποστήριξη πελατών του δικτύου Offerwall. Υπάρχει ξεχωριστή ενότητα για την Υποστήριξη Πελατών σε κάθε τείχος προσφορών στο οποίο έχετε πρόσβαση. Βεβαιωθείτε ότι ελέγχετε πάντα τα τείχη προσφορών στην εφαρμογή μας κάθε φορά που ολοκληρώνετε ένα ορόσημο για να βεβαιωθείτε ότι έχει παρακολουθηθεί.';
 	@override String get offersGuidline9 => '9). Σε περίπτωση που ενδιαφέρεστε για μια προσφορά παιχνιδιού/εφαρμογής, αλλά είχατε προηγουμένως εγκαταστήσει αυτό το παιχνίδι/εφαρμογή στη συσκευή σας, μην επιχειρήσετε την προσφορά που σχετίζεται με αυτήν την εφαρμογή/παιχνίδι. Ενδέχεται να μην λάβετε πίστωση για τη δραστηριότητά σας.';
 	@override String get offersGuidline10 => '10). Να διαβάζετε πάντα τις συμβουλές που παρέχονται από κάθε Προσφοροwall. Συχνά περιέχουν κρίσιμες λεπτομέρειες που μπορούν να σας βοηθήσουν να μεγιστοποιήσετε τις πιθανότητές σας για επιτυχημένη παρακολούθηση όλων των προσφορών.';
+	@override String get termination => 'Λήξη';
+	@override String get thisPeriodsSettlementIsterminated => 'Η διευθέτηση αυτής της περιόδου τερματίζεται!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Ανενεργός χρήστης '),
+		x,
+	]);
+	@override String get remind => 'υπενθυμίζω!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Η υπενθύμιση εκτός σύνδεσης μπορεί να εκτελεστεί μόνο μία φορά εντός 8 ωρών! Παρακαλώ περιμένετε ${x} δευτερόλεπτα και προσπαθήστε ξανά.';
+	@override String get noInactiveUsersFoundNow => 'Δεν βρέθηκαν ανενεργοί χρήστες';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} άτομα έχουν ειδοποιηθεί με επιτυχία!';
+	@override String get deltansMiningReminder => 'Υπενθύμιση για την εξόρυξη Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Η εξόρυξη σας έχει σταματήσει."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Ο αριθμός που εισαγάγατε στην εφαρμογή Delta ήταν ('),
+		fillin,
+		const TextSpan(text: '), αλλά ο αριθμός από τον οποίο στείλατε τη συμβολοσειρά επαλήθευσης ήταν ('),
+		sender,
+		const TextSpan(text: '). Παρακαλούμε προσαρμόστε τον και δοκιμάστε ξανά.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Σφάλμα αποκρυπτογράφησης, δοκιμάστε ξανά!';
+	@override String get reLogin => 'Συνδεθείτε ξανά';
 }
 
 // Path: <root>
@@ -5319,6 +5445,27 @@ class _StringsEs implements Translations {
 	@override String get offersGuidline8 => '8) Los hitos o tareas que completes suelen registrarse en los Offerwalls en cuestión de minutos, pero en algunos casos puede tardar hasta tres horas, así que ten paciencia. Si el hito no se registra, contacta con el servicio de atención al cliente de la red Offerwall. Hay una sección independiente para el servicio de atención al cliente en cada Offerwall al que accedas. Asegúrate de consultar los Offerwalls en nuestra app cada vez que completes un hito para asegurarte de que se haya registrado.';
 	@override String get offersGuidline9 => '9) Si te interesa una oferta de un juego o aplicación, pero ya la tenías instalada en tu dispositivo, no intentes usarla. Es posible que no se te acredite tu actividad.';
 	@override String get offersGuidline10 => '10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas.';
+	@override String get termination => 'Terminación';
+	@override String get thisPeriodsSettlementIsterminated => '¡La liquidación de este período ha finalizado!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Usuario inactivo '),
+		x,
+	]);
+	@override String get remind => '¡recordar!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'El recordatorio sin conexión solo se puede ejecutar una vez cada 8 horas. Espere ${x} segundos y vuelva a intentarlo.';
+	@override String get noInactiveUsersFoundNow => 'No se encontraron usuarios inactivos';
+	@override String successfullyNotifiedXpeople({required Object x}) => '¡${x} personas han sido notificadas exitosamente!';
+	@override String get deltansMiningReminder => '¡Recordatorio de minería de Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'amigo delta ${user}: "Tu minería se ha detenido."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'El número que ingresaste en la aplicación Delta fue ('),
+		fillin,
+		const TextSpan(text: '), pero el número desde el que enviaste tu verificación fue ('),
+		sender,
+		const TextSpan(text: '). Ajústalo y vuelve a intentarlo.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Error de descifrado, ¡inténtalo de nuevo!';
+	@override String get reLogin => 'Iniciar sesión de nuevo';
 }
 
 // Path: <root>
@@ -6059,6 +6206,27 @@ class _StringsFr implements Translations {
 	@override String get offersGuidline8 => '8) Les étapes/tâches que vous avez complétées sont généralement enregistrées sur les Offerwalls quelques minutes après leur achèvement, mais dans certains cas, cela peut prendre jusqu\'à trois heures ; veuillez donc patienter. Si l\'étape n\'est pas enregistrée, veuillez contacter le service client du réseau Offerwall. Une section dédiée au service client est disponible sur chaque Offerwall auquel vous accédez. Assurez-vous de toujours consulter les Offerwalls dans notre application chaque fois que vous franchissez une étape pour vous assurer qu\'elle a bien été suivie.';
 	@override String get offersGuidline9 => '9) Si vous êtes intéressé par une offre de jeu ou d\'application, mais que vous l\'aviez déjà installée sur votre appareil, veuillez ne pas tenter de participer à l\'offre correspondante. Votre activité pourrait ne pas être créditée.';
 	@override String get offersGuidline10 => '10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres.';
+	@override String get termination => 'Terminaison';
+	@override String get thisPeriodsSettlementIsterminated => 'Le règlement de cette période est terminé !';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Utilisateur inactif '),
+		x,
+	]);
+	@override String get remind => 'rappeler!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Le rappel hors ligne ne peut être exécuté qu\'une seule fois en 8 heures ! Veuillez patienter ${x} secondes et réessayer.';
+	@override String get noInactiveUsersFoundNow => 'Aucun utilisateur inactif trouvé';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} personnes ont été notifiées avec succès !';
+	@override String get deltansMiningReminder => 'Rappel sur l\'exploitation minière de Deltans !';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'ami delta ${user} : « Votre minage s\'est arrêté. »';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Le numéro saisi dans l\'application Delta était ('),
+		fillin,
+		const TextSpan(text: '), mais le numéro utilisé pour envoyer votre chaîne de vérification était ('),
+		sender,
+		const TextSpan(text: '). Veuillez ajuster ce paramètre et réessayer.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Erreur de décryptage, veuillez réessayer !';
+	@override String get reLogin => 'Connectez-vous à nouveau';
 }
 
 // Path: <root>
@@ -6795,6 +6963,27 @@ class _StringsHi implements Translations {
 	@override String get offersGuidline8 => '8). आपके द्वारा पूरे किए गए माइलस्टोन/कार्य आमतौर पर कुछ ही मिनटों में ऑफ़रवॉल पर दर्ज हो जाते हैं, लेकिन कुछ मामलों में, इसमें तीन घंटे तक का समय लग सकता है, इसलिए कृपया ऐसे मामलों में धैर्य रखें। अगर माइलस्टोन दर्ज नहीं होता है, तो कृपया ऑफ़रवॉल नेटवर्क से संबंधित ग्राहक सहायता से संपर्क करें। आपके द्वारा एक्सेस किए जाने वाले प्रत्येक ऑफ़रवॉल में ग्राहक सहायता के लिए एक अलग सेक्शन होता है। हर बार जब आप कोई माइलस्टोन पूरा करते हैं, तो यह सुनिश्चित करने के लिए कि उसे ट्रैक किया गया है, हमारे ऐप में ऑफ़रवॉल की जाँच अवश्य करें।';
 	@override String get offersGuidline9 => '9) अगर आप किसी गेम/ऐप ऑफ़र में रुचि रखते हैं, लेकिन आपके डिवाइस में वह गेम/ऐप पहले से इंस्टॉल है, तो कृपया उस ऐप/गेम से संबंधित ऑफ़र का इस्तेमाल न करें। हो सकता है कि आपको आपकी गतिविधि का क्रेडिट न मिले।';
 	@override String get offersGuidline10 => '10) हर ऑफ़रवॉल द्वारा दिए गए सुझावों को हमेशा पढ़ें। इनमें अक्सर महत्वपूर्ण विवरण होते हैं जो ऑफ़र पर सफलतापूर्वक नज़र रखने की आपकी संभावनाओं को अधिकतम करने में मदद कर सकते हैं।';
+	@override String get termination => 'समापन';
+	@override String get thisPeriodsSettlementIsterminated => 'इस अवधि का निपटान समाप्त हो गया है!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'निष्क्रिय उपयोगकर्ता '),
+		x,
+	]);
+	@override String get remind => 'याद दिलाना!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'ऑफ़लाइन रिमाइंडर 8 घंटों में केवल एक बार ही चलाया जा सकता है! कृपया ${x} सेकंड प्रतीक्षा करें और पुनः प्रयास करें।';
+	@override String get noInactiveUsersFoundNow => 'कोई निष्क्रिय उपयोगकर्ता नहीं मिला';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} लोगों को सफलतापूर्वक सूचित कर दिया गया है!';
+	@override String get deltansMiningReminder => 'डेल्टांस खनन अनुस्मारक!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'डेल्टा मित्र ${user}: "आपका खनन बंद हो गया है।"';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'डेल्टा ऐप पर आपने जो नंबर डाला था वह ('),
+		fillin,
+		const TextSpan(text: ') था, लेकिन सत्यापन स्ट्रिंग भेजने के लिए आपने जो नंबर इस्तेमाल किया वह ('),
+		sender,
+		const TextSpan(text: ') था। कृपया इसे समायोजित करें और पुनः प्रयास करें।'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'डिक्रिप्शन त्रुटि, कृपया पुनः प्रयास करें!';
+	@override String get reLogin => 'फिर से लॉगिन करें';
 }
 
 // Path: <root>
@@ -7533,6 +7722,27 @@ class _StringsIt implements Translations {
 	@override String get offersGuidline8 => '8). Le milestone/attività completate vengono solitamente registrate su tutti gli offerwall entro pochi minuti dal completamento, ma in alcuni casi potrebbero essere necessarie fino a tre ore, quindi sii paziente in questi casi. Se la milestone non viene registrata, contatta l\'assistenza clienti della rete Offerwall. È presente una sezione dedicata all\'assistenza clienti in ogni Offerwall a cui accedi. Assicurati sempre di controllare gli offerwall all\'interno della nostra app ogni volta che completi una milestone per assicurarti che sia stata tracciata.';
 	@override String get offersGuidline9 => '9) Se sei interessato a un\'offerta relativa a un gioco/app, ma in precedenza avevi installato quel gioco/app sul tuo dispositivo, ti preghiamo di non tentare l\'offerta relativa a quell\'app/gioco. Potresti non ricevere alcun accredito per la tua attività.';
 	@override String get offersGuidline10 => '10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte.';
+	@override String get termination => 'Risoluzione';
+	@override String get thisPeriodsSettlementIsterminated => 'Il periodo di liquidazione è terminato!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Utente inattivo '),
+		x,
+	]);
+	@override String get remind => 'ricordare!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Il promemoria offline può essere eseguito solo una volta ogni 8 ore! Attendi ${x} secondi e riprova.';
+	@override String get noInactiveUsersFoundNow => 'Nessun utente inattivo trovato';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} persone sono state avvisate con successo!';
+	@override String get deltansMiningReminder => 'Promemoria per l\'attività mineraria dei Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'amico delta ${user}: "Il tuo mining è stato interrotto."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Il numero inserito nell\'app Delta era ('),
+		fillin,
+		const TextSpan(text: '), ma il numero da cui hai inviato la stringa di verifica era ('),
+		sender,
+		const TextSpan(text: '). Modifica questo valore e riprova.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Errore di decrittazione, riprova!';
+	@override String get reLogin => 'Accedi di nuovo';
 }
 
 // Path: <root>
@@ -8270,6 +8480,27 @@ class _StringsJa implements Translations {
 	@override String get offersGuidline8 => '8) 完了したマイルストーン/タスクは通常、完了後数分以内にオファーウォール全体に反映されますが、場合によっては最大3時間かかることもありますので、その際はしばらくお待ちください。マイルストーンが反映されない場合は、オファーウォールネットワークのカスタマーサポートまでお問い合わせください。アクセスするオファーウォールごとにカスタマーサポート専用のセクションがあります。マイルストーンを達成するたびに、アプリ内のオファーウォールで追跡されていることを確認してください。';
 	@override String get offersGuidline9 => '9) ゲーム/アプリのオファーに興味があるものの、既にデバイスにそのゲーム/アプリがインストールされている場合は、そのアプリ/ゲームに関連するオファーをご利用にならないでください。アクティビティがクレジットされない可能性があります。';
 	@override String get offersGuidline10 => '10）各オファーウォールで提供されているヒントを必ず読んでください。オファーウォール全体におけるトラッキング成功率を最大化するのに役立つ重要な詳細が含まれていることがよくあります。';
+	@override String get termination => '終了';
+	@override String get thisPeriodsSettlementIsterminated => '今期の決済は終了しました！';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '非アクティブユーザー '),
+		x,
+	]);
+	@override String get remind => '思い出させる！';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'オフラインリマインダーは8時間以内に1回のみ実行できます。${x}秒待ってからもう一度お試しください。';
+	@override String get noInactiveUsersFoundNow => '非アクティブなユーザーは見つかりませんでした';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} 人に通知が完了しました。';
+	@override String get deltansMiningReminder => 'デルタンズ採掘リマインダー！';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'デルタフレンド ${user}:「採掘が停止しました。」';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Deltaアプリに入力した番号は('),
+		fillin,
+		const TextSpan(text: ')ですが、確認文字列の送信に使用した番号は('),
+		sender,
+		const TextSpan(text: ')です。番号を修正してもう一度お試しください。'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => '復号化エラーが発生しました。もう一度お試しください。';
+	@override String get reLogin => '再度ログイン';
 }
 
 // Path: <root>
@@ -9009,6 +9240,27 @@ class _StringsKo implements Translations {
 	@override String get offersGuidline8 => '8) 완료하신 마일스톤/작업은 일반적으로 완료 후 몇 분 이내에 오퍼월 전체에 등록되지만, 경우에 따라 최대 3시간까지 소요될 수 있으니 양해 부탁드립니다. 마일스톤이 등록되지 않을 경우, 오퍼월 네트워크 관련 고객 지원팀에 문의해 주세요. 모든 오퍼월에는 고객 지원팀이 별도로 마련되어 있습니다. 마일스톤을 완료할 때마다 앱 내 오퍼월을 확인하여 마일스톤이 제대로 추적되었는지 확인하세요.';
 	@override String get offersGuidline9 => '9) 게임/앱 혜택에 관심이 있지만 이전에 기기에 해당 게임/앱을 설치한 적이 있는 경우, 해당 앱/게임과 관련된 혜택을 시도하지 마세요. 활동 내역이 적립되지 않을 수 있습니다.';
 	@override String get offersGuidline10 => '10) 각 오퍼월에서 제공하는 팁을 항상 읽어보세요. 여기에는 오퍼 전반의 추적 성공률을 극대화하는 데 도움이 되는 중요한 정보가 포함되어 있는 경우가 많습니다.';
+	@override String get termination => '종료';
+	@override String get thisPeriodsSettlementIsterminated => '이 기간의 결제는 종료됩니다!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '비활성 사용자 '),
+		x,
+	]);
+	@override String get remind => '상기시키다!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => '오프라인 알림은 8시간 내에 한 번만 실행할 수 있습니다! ${x}초 동안 기다린 후 다시 시도하세요.';
+	@override String get noInactiveUsersFoundNow => '비활성 사용자가 없습니다.';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x}명에게 성공적으로 알림이 전달되었습니다!';
+	@override String get deltansMiningReminder => '델타인 채굴 알림!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => '델타 친구 ${user}: "채굴이 중단되었습니다."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: '델타 앱에 입력하신 번호는 ('),
+		fillin,
+		const TextSpan(text: ')이지만, 인증 문자열을 보낸 번호는 ('),
+		sender,
+		const TextSpan(text: ')입니다. 이 번호를 조정하여 다시 시도해 주세요.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => '복호화 오류가 발생했습니다. 다시 시도해 주세요!';
+	@override String get reLogin => '다시 로그인하세요';
 }
 
 // Path: <root>
@@ -9748,6 +10000,27 @@ class _StringsNl implements Translations {
 	@override String get offersGuidline8 => '8). De mijlpalen/taken die je voltooit, worden meestal binnen enkele minuten na voltooiing geregistreerd op de offerwalls, maar in sommige gevallen kan dit tot drie uur duren. Wees daarom geduldig. Als de mijlpaal niet wordt geregistreerd, neem dan contact op met de klantenservice van het Offerwall-netwerk. Er is een aparte sectie voor klantenservice voor elke Offerwall die je bezoekt. Controleer altijd de offerwalls in onze app elke keer dat je een mijlpaal voltooit om er zeker van te zijn dat deze is bijgehouden.';
 	@override String get offersGuidline9 => '9). Als je geïnteresseerd bent in een game-/app-aanbieding, maar je had die game/app al op je apparaat geïnstalleerd, probeer dan niet op de aanbieding voor die app/game in te gaan. Je krijgt mogelijk geen tegoed voor je activiteit.';
 	@override String get offersGuidline10 => '10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren.';
+	@override String get termination => 'Beëindiging';
+	@override String get thisPeriodsSettlementIsterminated => 'De afrekening van deze periode is beëindigd!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Inactieve gebruiker '),
+		x,
+	]);
+	@override String get remind => 'herinneren!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Offline herinnering kan slechts één keer binnen 8 uur worden uitgevoerd! Wacht ${x} seconden en probeer het opnieuw.';
+	@override String get noInactiveUsersFoundNow => 'Geen inactieve gebruikers gevonden';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} mensen zijn succesvol op de hoogte gebracht!';
+	@override String get deltansMiningReminder => 'Herinnering aan Deltans Mining!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta-vriend ${user}: "Je mining is gestopt."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Het nummer dat je in de Delta-app hebt ingevoerd, was ('),
+		fillin,
+		const TextSpan(text: '), maar het nummer waarmee je je verificatiestring hebt verzonden, was ('),
+		sender,
+		const TextSpan(text: '). Pas dit aan en probeer het opnieuw.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Fout bij het decoderen. Probeer het opnieuw!';
+	@override String get reLogin => 'Opnieuw inloggen';
 }
 
 // Path: <root>
@@ -10488,6 +10761,27 @@ class _StringsPl implements Translations {
 	@override String get offersGuidline8 => '8). Kamienie milowe/zadania, które ukończyłeś/ukończyłaś, są zazwyczaj rejestrowane na Offerwallach w ciągu kilku minut od ich ukończenia, ale w niektórych przypadkach może to potrwać do trzech godzin, dlatego prosimy o cierpliwość. Jeśli kamień milowy nie zostanie zarejestrowany, skontaktuj się z obsługą klienta sieci Offerwall. W każdej witrynie Offerwall, do której uzyskujesz dostęp, znajduje się osobna sekcja obsługi klienta. Zawsze sprawdzaj Offerwalle w naszej aplikacji po każdym ukończeniu kamienia milowego, aby upewnić się, że został on zarejestrowany.';
 	@override String get offersGuidline9 => '9). Jeśli jesteś zainteresowany ofertą gry/aplikacji, ale miałeś ją wcześniej zainstalowaną na swoim urządzeniu, nie próbuj skorzystać z oferty dotyczącej tej gry/aplikacji. Możesz nie otrzymać punktów za swoją aktywność.';
 	@override String get offersGuidline10 => '10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert.';
+	@override String get termination => 'Zakończenie';
+	@override String get thisPeriodsSettlementIsterminated => 'Rozliczenie tego okresu zostało zakończone!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Nieaktywny użytkownik '),
+		x,
+	]);
+	@override String get remind => 'przypomnieć!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Przypomnienie offline można wykonać tylko raz w ciągu 8 godzin! Odczekaj ${x} sekund i spróbuj ponownie.';
+	@override String get noInactiveUsersFoundNow => 'Nie znaleziono nieaktywnych użytkowników';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} osób zostało pomyślnie powiadomionych!';
+	@override String get deltansMiningReminder => 'Przypomnienie o górnictwie Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Twoje wydobycie zostało zatrzymane."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Numer, który podałeś w aplikacji Delta, to ('),
+		fillin,
+		const TextSpan(text: '), ale numer, z którego wysłałeś ciąg weryfikacyjny, to ('),
+		sender,
+		const TextSpan(text: '). Popraw to i spróbuj ponownie.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Błąd deszyfrowania, spróbuj ponownie!';
+	@override String get reLogin => 'Zaloguj się ponownie';
 }
 
 // Path: <root>
@@ -11227,6 +11521,27 @@ class _StringsPt implements Translations {
 	@override String get offersGuidline8 => '8). Os marcos/tarefas concluídos por você geralmente são registrados nos Offerwalls poucos minutos após a conclusão, mas, em certos casos, pode levar até três horas, portanto, seja paciente. Caso o marco não seja registrado, entre em contato com o suporte ao cliente da rede Offerwall. Há uma seção dedicada ao Suporte ao Cliente em cada Offerwall que você acessa. Certifique-se sempre de verificar os Offerwalls em nosso aplicativo sempre que concluir um marco para garantir que ele tenha sido rastreado.';
 	@override String get offersGuidline9 => '9). Caso você esteja interessado em uma oferta de jogo/aplicativo, mas já o tenha instalado em seu dispositivo, não tente a oferta referente a esse aplicativo/jogo. Você pode não receber créditos pela sua atividade.';
 	@override String get offersGuidline10 => '10) Leia sempre as dicas fornecidas por cada Offerwall. Elas geralmente contêm detalhes cruciais que podem ajudar a maximizar suas chances de sucesso no rastreamento de todas as ofertas.';
+	@override String get termination => 'Rescisão';
+	@override String get thisPeriodsSettlementIsterminated => 'A liquidação deste período foi encerrada!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Usuário inativo '),
+		x,
+	]);
+	@override String get remind => 'lembrar!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'O lembrete offline só pode ser executado uma vez a cada 8 horas! Aguarde ${x} segundos e tente novamente.';
+	@override String get noInactiveUsersFoundNow => 'Nenhum usuário inativo encontrado';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} pessoas foram notificadas com sucesso!';
+	@override String get deltansMiningReminder => 'Lembrete de Mineração Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'amigo delta ${user}: "Sua mineração foi interrompida."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'O número que você inseriu no aplicativo Delta foi ('),
+		fillin,
+		const TextSpan(text: '), mas o número que você usou para enviar a string de verificação foi ('),
+		sender,
+		const TextSpan(text: '). Ajuste isso e tente novamente.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Erro de descriptografia, tente novamente!';
+	@override String get reLogin => 'Efetue login novamente';
 }
 
 // Path: <root>
@@ -11965,6 +12280,27 @@ class _StringsRo implements Translations {
 	@override String get offersGuidline8 => '8). Etapele/sarcinile finalizate de dvs. sunt de obicei înregistrate pe Offerwall-uri în câteva minute de la finalizare, dar în anumite cazuri, poate dura până la trei ore, așa că vă rugăm să aveți răbdare în astfel de cazuri. Dacă etapa nu este înregistrată, vă rugăm să contactați serviciul de asistență pentru clienți din rețeaua Offerwall. Există o secțiune separată pentru Asistență pentru clienți pe fiecare Offerwall pe care îl accesați. Asigurați-vă întotdeauna că verificați ofertewall-urile din aplicația noastră de fiecare dată când finalizați o etapă pentru a vă asigura că a fost urmărită.';
 	@override String get offersGuidline9 => '9). În cazul în care sunteți interesat de o ofertă pentru un joc/o aplicație, dar ați avut anterior jocul/aplicația respectivă instalată pe dispozitiv, vă rugăm să nu încercați oferta aferentă aplicației/jocului respectiv. Este posibil să nu fiți creditat pentru activitatea dvs.';
 	@override String get offersGuidline10 => '10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor.';
+	@override String get termination => 'Terminare';
+	@override String get thisPeriodsSettlementIsterminated => 'Decontarea pentru această perioadă s-a încheiat!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Utilizator inactiv '),
+		x,
+	]);
+	@override String get remind => 'reaminti!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Memento-ul offline poate fi executat o singură dată în 8 ore! Vă rugăm să așteptați ${x} secunde și să încercați din nou.';
+	@override String get noInactiveUsersFoundNow => 'Nu au fost găsiți utilizatori inactivi';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} persoane au fost notificate cu succes!';
+	@override String get deltansMiningReminder => 'Memento pentru mineritul Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: „Mineritul ți s-a oprit.”';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Numărul introdus în aplicația Delta a fost ('),
+		fillin,
+		const TextSpan(text: '), dar numărul folosit pentru a trimite șirul de verificare a fost ('),
+		sender,
+		const TextSpan(text: '). Vă rugăm să ajustați această valoare și să încercați din nou.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Eroare de decriptare, vă rugăm să încercați din nou!';
+	@override String get reLogin => 'Conectați-vă din nou';
 }
 
 // Path: <root>
@@ -12705,6 +13041,27 @@ class _StringsRu implements Translations {
 	@override String get offersGuidline8 => '8). Выполненные вами этапы/задачи обычно регистрируются на Offerwalls в течение нескольких минут после завершения, но в некоторых случаях это может занять до трёх часов, поэтому, пожалуйста, проявите терпение. Если этап не регистрируется, обратитесь в службу поддержки клиентов сети Offerwall. Для каждого Offerwall, к которому вы обращаетесь, есть отдельный раздел для службы поддержки клиентов. Всегда проверяйте offerwalls в нашем приложении каждый раз после завершения этапа, чтобы убедиться, что он отслежен.';
 	@override String get offersGuidline9 => '9) Если вас интересует предложение игры/приложения, но оно уже было установлено на вашем устройстве, пожалуйста, не пытайтесь воспользоваться предложением, связанным с этим приложением/игрой. Бонусы за вашу активность могут быть не засчитаны.';
 	@override String get offersGuidline10 => '10) Всегда читайте советы, представленные на каждом Offerwall. Они часто содержат важную информацию, которая поможет вам максимально увеличить шансы на успешное отслеживание предложений.';
+	@override String get termination => 'Прекращение';
+	@override String get thisPeriodsSettlementIsterminated => 'Расчет за этот период прекращается!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Неактивный пользователь '),
+		x,
+	]);
+	@override String get remind => 'напоминать!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Офлайн-напоминание можно выполнить только один раз в течение 8 часов! Подождите ${x} секунд и повторите попытку.';
+	@override String get noInactiveUsersFoundNow => 'Неактивных пользователей не найдено.';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} человек были успешно оповещены!';
+	@override String get deltansMiningReminder => 'Напоминание о горнодобывающей промышленности Дельтанса!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta друг ${user}: «Ваш майнинг остановлен».';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Номер, который вы ввели в приложении Delta, был ('),
+		fillin,
+		const TextSpan(text: '), но номер, с которого вы отправили проверочную строку, был ('),
+		sender,
+		const TextSpan(text: '). Исправьте это и повторите попытку.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Ошибка расшифровки, попробуйте еще раз!';
+	@override String get reLogin => 'Войти снова';
 }
 
 // Path: <root>
@@ -13440,6 +13797,27 @@ class _StringsSw implements Translations {
 	@override String get offersGuidline8 => '8). Mafanikio/majukumu yanayokamilishwa na wewe kwa kawaida husajiliwa kote kwenye kuta ndani ya dakika chache baada ya kukamilika, lakini katika hali fulani, inaweza kuchukua hadi saa tatu, kwa hivyo tafadhali kuwa na subira katika hali kama hizi. Ikiwa hatua muhimu haitasajiliwa, tafadhali wasiliana na usaidizi kwa wateja unaohusiana na mtandao wa Offerwall. Kuna sehemu tofauti ya Usaidizi kwa Wateja katika kila Ofa unayofikia. Daima hakikisha unaangalia kuta za ofa ndani ya programu yetu kila mara unapomaliza hatua muhimu ili kuhakikisha kuwa imefuatiliwa.';
 	@override String get offersGuidline9 => '9). Iwapo ungependa kupata ofa ya mchezo/programu, lakini hapo awali ulikuwa na mchezo/programu hiyo iliyosakinishwa kwenye kifaa chako, tafadhali usijaribu toleo linalohusiana na programu/mchezo huo. Huenda usipewe sifa kwa shughuli yako.';
 	@override String get offersGuidline10 => '10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote.';
+	@override String get termination => 'Kukomesha';
+	@override String get thisPeriodsSettlementIsterminated => 'Suluhu ya kipindi hiki imekatishwa!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Mtumiaji asiyetumika '),
+		x,
+	]);
+	@override String get remind => 'kumbusha!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Kikumbusho cha nje ya mtandao kinaweza tu kutekelezwa mara moja ndani ya saa 8! Tafadhali subiri sekunde ${x} na ujaribu tena.';
+	@override String get noInactiveUsersFoundNow => 'Hakuna watumiaji wasiotumia waliopatikana';
+	@override String successfullyNotifiedXpeople({required Object x}) => 'Watu ${x} wamearifiwa!';
+	@override String get deltansMiningReminder => 'Kikumbusho cha Madini ya Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'rafiki wa delta ${user}: "Uchimbaji madini wako umekoma."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Nambari uliyoweka kwenye programu ya Delta ilikuwa ('),
+		fillin,
+		const TextSpan(text: '), lakini nambari uliyotuma mfuatano wako wa uthibitishaji ilikuwa ('),
+		sender,
+		const TextSpan(text: '). Tafadhali rekebisha hii na ujaribu tena.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Hitilafu ya usimbuaji, tafadhali jaribu tena!';
+	@override String get reLogin => 'Ingia tena';
 }
 
 // Path: <root>
@@ -14178,6 +14556,27 @@ class _StringsTh implements Translations {
 	@override String get offersGuidline8 => '8) โดยปกติแล้ว ความสำเร็จ/งานที่คุณทำเสร็จจะถูกบันทึกลงใน Offerwall ภายในไม่กี่นาทีหลังจากเสร็จสิ้น แต่ในบางกรณีอาจใช้เวลานานถึงสามชั่วโมง ดังนั้นโปรดอดทนรอ หากความสำเร็จ/งานไม่ได้รับการบันทึก โปรดติดต่อฝ่ายสนับสนุนลูกค้าที่เกี่ยวข้องกับเครือข่าย Offerwall มีส่วนแยกต่างหากสำหรับฝ่ายสนับสนุนลูกค้าในทุก Offerwall ที่คุณเข้าถึง โปรดตรวจสอบ Offerwall ในแอปของเราทุกครั้งที่คุณทำความสำเร็จ/งานเสร็จ เพื่อให้มั่นใจว่ามีการติดตามความคืบหน้า';
 	@override String get offersGuidline9 => '9) หากคุณสนใจข้อเสนอเกม/แอป แต่คุณได้ติดตั้งเกม/แอปนั้นไว้ในอุปกรณ์ของคุณแล้ว โปรดอย่าพยายามใช้ข้อเสนอที่เกี่ยวข้องกับแอป/เกมนั้น คุณอาจไม่ได้รับเครดิตสำหรับกิจกรรมของคุณ';
 	@override String get offersGuidline10 => '10) อ่านเคล็ดลับต่างๆ ที่ Offerwall จัดเตรียมไว้ให้เสมอ ซึ่งมักจะมีรายละเอียดสำคัญที่ช่วยเพิ่มโอกาสในการติดตามข้อเสนอต่างๆ สำเร็จ';
+	@override String get termination => 'การยุติ';
+	@override String get thisPeriodsSettlementIsterminated => 'งวดนี้สิ้นสุดแล้ว!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'ผู้ใช้ที่ไม่ได้ใช้งาน '),
+		x,
+	]);
+	@override String get remind => 'เตือน!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'การแจ้งเตือนแบบออฟไลน์สามารถดำเนินการได้เพียงครั้งเดียวภายใน 8 ชั่วโมง! โปรดรอ ${x} วินาทีแล้วลองอีกครั้ง';
+	@override String get noInactiveUsersFoundNow => 'ไม่พบผู้ใช้ที่ไม่ได้ใช้งาน';
+	@override String successfullyNotifiedXpeople({required Object x}) => 'มีการแจ้งเตือนเรียบร้อยแล้ว ${x} คน!';
+	@override String get deltansMiningReminder => 'คำเตือนเรื่องการขุดของเดลตัน!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'เพื่อนเดลต้า ${user}: "การขุดของคุณหยุดแล้ว"';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'หมายเลขที่คุณป้อนในแอป Delta คือ ('),
+		fillin,
+		const TextSpan(text: ') แต่หมายเลขที่คุณใช้ส่งสตริงยืนยันคือ ('),
+		sender,
+		const TextSpan(text: ') โปรดปรับค่านี้และลองอีกครั้ง'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'เกิดข้อผิดพลาดในการถอดรหัส โปรดลองอีกครั้ง!';
+	@override String get reLogin => 'เข้าสู่ระบบอีกครั้ง';
 }
 
 // Path: <root>
@@ -14916,6 +15315,27 @@ class _StringsTr implements Translations {
 	@override String get offersGuidline8 => '8). Tamamladığınız kilometre taşları/görevler genellikle tamamlandıktan sonra birkaç dakika içinde offerwall\'lara kaydedilir, ancak bazı durumlarda üç saate kadar sürebilir, bu nedenle lütfen bu gibi durumlarda sabırlı olun. Kilometre taşı kaydedilmezse, lütfen Offerwall ağıyla ilgili müşteri desteğiyle iletişime geçin. Eriştiğiniz her Offerwall\'da Müşteri Desteği için ayrı bir bölüm bulunur. Bir kilometre taşını tamamladığınızda, takip edildiğinden emin olmak için uygulamamızdaki offerwall\'ları kontrol ettiğinizden emin olun.';
 	@override String get offersGuidline9 => '9). Bir oyun/uygulama teklifiyle ilgileniyorsanız, ancak söz konusu oyun/uygulama daha önce cihazınıza yüklenmişse, lütfen söz konusu uygulama/oyunla ilgili teklifi denemeyin. Etkinliğiniz için kredi alamayabilirsiniz.';
 	@override String get offersGuidline10 => '10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir.';
+	@override String get termination => 'Fesih';
+	@override String get thisPeriodsSettlementIsterminated => 'Bu dönemin yerleşimi sona ermiştir!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Etkin olmayan kullanıcı '),
+		x,
+	]);
+	@override String get remind => 'hatırlatmak!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Çevrimdışı hatırlatma 8 saat içinde yalnızca bir kez çalıştırılabilir! Lütfen ${x} saniye bekleyin ve tekrar deneyin.';
+	@override String get noInactiveUsersFoundNow => 'Etkin olmayan kullanıcı bulunamadı';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} kişiye başarıyla bildirim gönderildi!';
+	@override String get deltansMiningReminder => 'Deltans Madencilik Hatırlatması!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Madenciliğiniz durduruldu."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Delta uygulamasına girdiğiniz numara ('),
+		fillin,
+		const TextSpan(text: ') idi, ancak doğrulama dizenizi gönderdiğiniz numara ('),
+		sender,
+		const TextSpan(text: ') idi. Lütfen bunu düzeltip tekrar deneyin.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Şifre çözme hatası, lütfen tekrar deneyin!';
+	@override String get reLogin => 'Tekrar giriş yapın';
 }
 
 // Path: <root>
@@ -15655,6 +16075,27 @@ class _StringsUk implements Translations {
 	@override String get offersGuidline8 => '8). Виконані вами етапи/завдання зазвичай реєструються на стінах пропозицій протягом кількох хвилин після їх завершення, але в деяких випадках це може зайняти до трьох годин, тому будьте терплячими. Якщо етап не зареєстровано, зверніться до служби підтримки клієнтів мережі Offerwall. На кожному Offerwall, до якого ви отримуєте доступ, є окремий розділ для підтримки клієнтів. Завжди перевіряйте стіни пропозицій у нашому додатку щоразу, коли ви завершуєте етап, щоб переконатися, що його було відстежено.';
 	@override String get offersGuidline9 => '9). Якщо вас зацікавила пропозиція гри/додатку, але ця гра/додаток раніше була встановлена на вашому пристрої, будь ласка, не намагайтеся скористатися пропозицією, що стосується цієї програми/гри. Вам можуть не нарахувати винагороду за вашу активність.';
 	@override String get offersGuidline10 => '10). Завжди читайте поради, надані на кожному Offerwall. Вони часто містять важливі деталі, які можуть допомогти максимізувати ваші шанси на успішне відстеження пропозицій.';
+	@override String get termination => 'Припинення';
+	@override String get thisPeriodsSettlementIsterminated => 'Розрахунок за цей період припинено!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Неактивний користувач '),
+		x,
+	]);
+	@override String get remind => 'нагадай!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Нагадування офлайн можна виконати лише один раз протягом 8 годин! Будь ласка, зачекайте ${x} секунд і спробуйте ще раз.';
+	@override String get noInactiveUsersFoundNow => 'Неактивних користувачів не знайдено';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} осіб успішно сповіщено!';
+	@override String get deltansMiningReminder => 'Нагадування про видобуток корисних копалин у Дельтані!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'дельта-друг ${user}: "Ваш майнінг зупинено."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Номер, який ви ввели в застосунку Delta, був ('),
+		fillin,
+		const TextSpan(text: '), але номер, з якого ви надіслали рядок підтвердження, був ('),
+		sender,
+		const TextSpan(text: '). Будь ласка, виправте його та спробуйте ще раз.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Помилка розшифрування, спробуйте ще раз!';
+	@override String get reLogin => 'Увійти знову';
 }
 
 // Path: <root>
@@ -16393,6 +16834,27 @@ class _StringsUr implements Translations {
 	@override String get offersGuidline8 => '8)۔ آپ کی طرف سے مکمل کیے گئے سنگ میل/کام عام طور پر مکمل ہونے کے چند منٹوں کے اندر اندر آفر والز پر رجسٹر کیے جاتے ہیں، لیکن بعض صورتوں میں، اس میں تین گھنٹے تک لگ سکتے ہیں، اس لیے براہ کرم ایسے معاملات میں صبر کریں۔ اگر سنگ میل رجسٹرڈ نہیں ہوتا ہے، تو براہ کرم آفر وال نیٹ ورک سے متعلق کسٹمر سپورٹ سے رابطہ کریں۔ کسٹمر سپورٹ کے لیے ہر اس آفر وال پر ایک الگ سیکشن ہے جس تک آپ رسائی حاصل کرتے ہیں۔ ہمیشہ اس بات کو یقینی بنائیں کہ جب بھی آپ کوئی سنگ میل مکمل کرتے ہیں تو آپ ہماری ایپ کے اندر آفر والز کو چیک کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ اسے ٹریک کیا گیا ہے۔';
 	@override String get offersGuidline9 => '9)۔ اگر آپ گیم/ایپ کی پیشکش میں دلچسپی رکھتے ہیں، لیکن آپ نے پہلے وہ گیم/ایپ اپنے آلے میں انسٹال کر رکھی تھی، تو براہ کرم اس ایپ/گیم سے متعلق پیشکش کی کوشش نہ کریں۔ ہو سکتا ہے آپ کو اپنی سرگرمی کا کریڈٹ نہ ملے۔';
 	@override String get offersGuidline10 => '10)۔ ہر آفر وال کی طرف سے فراہم کردہ تجاویز کو ہمیشہ پڑھیں۔ ان میں اکثر اہم تفصیلات ہوتی ہیں جو آپ کے تمام پیشکشوں میں کامیاب ٹریکنگ کے امکانات کو بڑھانے میں مدد کر سکتی ہیں۔';
+	@override String get termination => 'ختم کرنا';
+	@override String get thisPeriodsSettlementIsterminated => 'اس مدت کی تصفیہ ختم!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'غیر فعال صارف '),
+		x,
+	]);
+	@override String get remind => 'یاد دلانا!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'آف لائن یاد دہانی 8 گھنٹے کے اندر صرف ایک بار عمل میں لائی جا سکتی ہے! براہ کرم ${x} سیکنڈ انتظار کریں اور دوبارہ کوشش کریں۔';
+	@override String get noInactiveUsersFoundNow => 'کوئی غیر فعال صارف نہیں ملا';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} لوگوں کو کامیابی سے مطلع کر دیا گیا ہے!';
+	@override String get deltansMiningReminder => 'Deltans کان کنی کی یاد دہانی!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'ڈیلٹا دوست ${user}: "آپ کی کان کنی رک گئی ہے۔"';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'ڈیلٹا ایپ پر آپ نے جو نمبر درج کیا تھا وہ ('),
+		fillin,
+		const TextSpan(text: ') تھا، لیکن آپ نے تصدیقی اسٹرنگ بھیجنے کے لیے جو نمبر استعمال کیا وہ ('),
+		sender,
+		const TextSpan(text: ') تھا۔ براہ کرم اسے ایڈجسٹ کریں اور دوبارہ کوشش کریں۔'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'ڈکرپشن کی خرابی، براہ کرم دوبارہ کوشش کریں!';
+	@override String get reLogin => 'دوبارہ لاگ ان کریں۔';
 }
 
 // Path: <root>
@@ -17132,6 +17594,27 @@ class _StringsVi implements Translations {
 	@override String get offersGuidline8 => '8). Các mốc/nhiệm vụ bạn đã hoàn thành thường được ghi nhận trên các tường đề xuất trong vòng vài phút sau khi hoàn thành, nhưng trong một số trường hợp, có thể mất đến ba giờ, vì vậy hãy kiên nhẫn. Nếu mốc không được ghi nhận, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của mạng lưới Offerwall. Có một mục riêng dành cho Hỗ trợ Khách hàng trên mỗi Offerwall bạn truy cập. Luôn đảm bảo bạn kiểm tra tường đề xuất trong ứng dụng của chúng tôi mỗi khi hoàn thành một mốc để đảm bảo nó đã được theo dõi.';
 	@override String get offersGuidline9 => '9). Trong trường hợp bạn quan tâm đến một ưu đãi trò chơi/ứng dụng nhưng đã cài đặt trò chơi/ứng dụng đó trên thiết bị trước đó, vui lòng không thử ưu đãi liên quan đến ứng dụng/trò chơi đó. Hoạt động của bạn có thể sẽ không được ghi nhận.';
 	@override String get offersGuidline10 => '10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi.';
+	@override String get termination => 'Chấm dứt';
+	@override String get thisPeriodsSettlementIsterminated => 'Việc thanh toán trong giai đoạn này đã kết thúc!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: 'Người dùng không hoạt động '),
+		x,
+	]);
+	@override String get remind => 'nhắc lại!';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => 'Lời nhắc ngoại tuyến chỉ có thể được thực hiện một lần trong vòng 8 giờ! Vui lòng đợi ${x} giây và thử lại.';
+	@override String get noInactiveUsersFoundNow => 'Không tìm thấy người dùng không hoạt động';
+	@override String successfullyNotifiedXpeople({required Object x}) => '${x} người đã được thông báo thành công!';
+	@override String get deltansMiningReminder => 'Nhắc nhở về khai thác Deltans!';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta friend ${user}: "Hoạt động khai thác của bạn đã dừng lại."';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: 'Số bạn đã nhập trên ứng dụng Delta là ('),
+		fillin,
+		const TextSpan(text: '), nhưng số bạn dùng để gửi chuỗi xác minh là ('),
+		sender,
+		const TextSpan(text: '). Vui lòng điều chỉnh số này và thử lại.'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => 'Có lỗi giải mã, vui lòng thử lại!';
+	@override String get reLogin => 'Đăng nhập lại';
 }
 
 // Path: <root>
@@ -17872,6 +18355,27 @@ class _StringsZhCn implements Translations {
 	@override String get offersGuidline8 => '8). 您完成的里程碑/任务通常会在几分钟内记录在积分墙上，但在某些情况下，可能需要长达三个小时，因此请耐心等待。如果里程碑未记录，请联系积分墙网络的客服。您访问的每个积分墙上都有单独的客服专区。每次完成里程碑后，请务必在我们的应用程序中查看积分墙，以确保其已被追踪。';
 	@override String get offersGuidline9 => '9). 如果您对某个游戏/应用的优惠感兴趣，但您的设备之前已安装该游戏/应用，请勿尝试与该应用/游戏相关的优惠。您可能无法获得相应活动积分。';
 	@override String get offersGuidline10 => '10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。';
+	@override String get termination => '终止';
+	@override String get thisPeriodsSettlementIsterminated => '本期结算结算终止!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '不活跃用户'),
+		x,
+	]);
+	@override String get remind => '提醒！';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => '8小时内只能执行一次离线提醒！请再等待${x}秒之后再试。';
+	@override String get noInactiveUsersFoundNow => '现在没发现不活跃用户';
+	@override String successfullyNotifiedXpeople({required Object x}) => '已成功通知${x}人！';
+	@override String get deltansMiningReminder => 'Deltans挖矿提醒！';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta好友${user}：“您的挖矿已停止.”';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: '您在 Delta 应用程序上输入的号码是 ('),
+		fillin,
+		const TextSpan(text: ')，但您发送验证字符串时使用的号码是 ('),
+		sender,
+		const TextSpan(text: ')。请调整后重试。'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => '解密出错，请重试！';
+	@override String get reLogin => '重新登录';
 }
 
 // Path: <root>
@@ -18612,6 +19116,27 @@ class _StringsZhTw implements Translations {
 	@override String get offersGuidline8 => '8). 您完成的里程碑/任務通常會在幾分鐘內記錄在積分牆上，但在某些情況下，可能需要長達三個小時，因此請耐心等待。若里程碑未記錄，請聯絡積分牆網路的客服。您造訪的每個積分牆上都有單獨的客服專區。每次完成里程碑後，請務必在我們的應用程式中查看積分牆，以確保其已被追蹤。';
 	@override String get offersGuidline9 => '9). 如果您對某個遊戲/應用程式的優惠感興趣，但您的裝置之前已安裝該遊戲/應用，請勿嘗試與該應用程式/遊戲相關的優惠。您可能無法獲得相應活動積分。';
 	@override String get offersGuidline10 => '10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。';
+	@override String get termination => '終止';
+	@override String get thisPeriodsSettlementIsterminated => '本期結算結算終止!';
+	@override TextSpan inactiveUsersX({required InlineSpan x}) => TextSpan(children: [
+		const TextSpan(text: '不活躍用戶'),
+		x,
+	]);
+	@override String get remind => '提醒！';
+	@override String offlineReminderOnlyOnce8hours_please({required Object x}) => '8小時內只能執行一次離線提醒！請再等待${x}秒之後再試。';
+	@override String get noInactiveUsersFoundNow => '現在沒發現不活躍用戶';
+	@override String successfullyNotifiedXpeople({required Object x}) => '已成功通知${x}人！';
+	@override String get deltansMiningReminder => 'Deltans挖礦提醒！';
+	@override String deltaFriendX_yourMiningHasStopped({required Object user}) => 'delta好友${user}：“您的挖礦已停止.”';
+	@override TextSpan inputAndActualNumberDoNotMatch({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+		const TextSpan(text: '您在 Delta 應用程式上輸入的號碼是 ('),
+		fillin,
+		const TextSpan(text: ')，但您發送驗證字串時使用的號碼是 ('),
+		sender,
+		const TextSpan(text: ')。請調整後重試。'),
+	]);
+	@override String get decryptionError_pleaseTryAgain => '解密出錯，請重試！';
+	@override String get reLogin => '重新登入';
 }
 
 /// Flat map(s) containing all translations.
@@ -19330,6 +19855,27 @@ extension on Translations {
 			case 'offersGuidline8': return '8). The milestones/tasks completed by you are usually registered across the offerwalls within a few minutes of completion, but in certain cases, it may take up to three hours, so please be patient in such cases. If the milestone doesn’t get registered, please reach out to the customer support pertaining to the Offerwall network. There’s a separate section for Customer Support across every Offerwall you access. Always ensure you check the offerwalls within our app every time you finish a milestone to ensure it has been tracked.';
 			case 'offersGuidline9': return '9). In case you’re interested in a game/app offer, but you previously had that game/app installed in your device, please don’t attempt the offer pertaining to that app/game. You may not get credited for your activity.';
 			case 'offersGuidline10': return '10). Always read the tips provided by each Offerwall. They often contain crucial details that can help maximize your chances of successful tracking across the offers.';
+			case 'termination': return 'Termination';
+			case 'thisPeriodsSettlementIsterminated': return 'This period\'s settlement is terminated!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Inactive user '),
+				x,
+			]);
+			case 'remind': return 'remind!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Offline reminder can only be executed once within 8 hours! Please wait ${x} seconds and try again.';
+			case 'noInactiveUsersFoundNow': return 'No inactive users found';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} people have been notified successfully!';
+			case 'deltansMiningReminder': return 'Deltans Mining Reminder!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Your mining has stopped."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'The number you\'ve entered on the Delta app is ('),
+				fillin,
+				const TextSpan(text: ') but the number with which you\'ve sent the verification string is ('),
+				sender,
+				const TextSpan(text: '). Please adjust them and try again.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Decryption error, please try again!';
+			case 'reLogin': return 'Log in again';
 			default: return null;
 		}
 	}
@@ -20048,6 +20594,27 @@ extension on _StringsBg {
 			case 'offersGuidline8': return '8). Завършените от вас етапи/задачи обикновено се регистрират в офертните стени в рамките на няколко минути след завършването им, но в определени случаи това може да отнеме до три часа, така че, моля, бъдете търпеливи. Ако етапът не се регистрира, моля, свържете се с отдела за обслужване на клиенти на мрежата на Offerwall. Има отделен раздел за обслужване на клиенти във всеки Offerwall, до който имате достъп. Винаги проверявайте офертните стени в нашето приложение всеки път, когато завършите етап, за да се уверите, че е проследен.';
 			case 'offersGuidline9': return '9). В случай че се интересувате от оферта за игра/приложение, но преди това сте имали инсталирана тази игра/приложение на устройството си, моля, не се възползвайте от офертата, отнасяща се до това приложение/игра. Възможно е да не получите кредит за активността си.';
 			case 'offersGuidline10': return '10). Винаги четете съветите, предоставени от всяка Offerwall. Те често съдържат важни подробности, които могат да ви помогнат да увеличите максимално шансовете си за успешно проследяване на офертите.';
+			case 'termination': return 'Прекратяване';
+			case 'thisPeriodsSettlementIsterminated': return 'Сметката за този период е прекратена!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Неактивен потребител '),
+				x,
+			]);
+			case 'remind': return 'напомни!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Напомнянето офлайн може да се изпълни само веднъж в рамките на 8 часа! Моля, изчакайте ${x} секунди и опитайте отново.';
+			case 'noInactiveUsersFoundNow': return 'Не са намерени неактивни потребители';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} души са били успешно уведомени!';
+			case 'deltansMiningReminder': return 'Напомняне за минното дело в Делта!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'делта приятел ${user}: "Добивът ви е спрян."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Номерът, който въведохте в приложението Delta, беше ('),
+				fillin,
+				const TextSpan(text: ', но номерът, който използвахте за изпращане на низа за потвърждение, беше ('),
+				sender,
+				const TextSpan(text: '). Моля, коригирайте го и опитайте отново.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Грешка при дешифриране, моля опитайте отново!';
+			case 'reLogin': return 'Влезте отново';
 			default: return null;
 		}
 	}
@@ -20769,6 +21336,27 @@ extension on _StringsBn {
 			case 'offersGuidline8': return '৮)। আপনার দ্বারা সম্পন্ন মাইলস্টোন/কাজগুলি সাধারণত অফারওয়ালগুলিতে কয়েক মিনিটের মধ্যে নিবন্ধিত হয়, তবে কিছু ক্ষেত্রে, এটি তিন ঘন্টা পর্যন্ত সময় নিতে পারে, তাই এই ক্ষেত্রে ধৈর্য ধরুন। যদি মাইলস্টোনটি নিবন্ধিত না হয়, তাহলে অনুগ্রহ করে অফারওয়াল নেটওয়ার্ক সম্পর্কিত গ্রাহক সহায়তার সাথে যোগাযোগ করুন। আপনার অ্যাক্সেস করা প্রতিটি অফারওয়ালে গ্রাহক সহায়তার জন্য একটি পৃথক বিভাগ রয়েছে। আপনি যখনই কোনও মাইলস্টোন সম্পূর্ণ করেন তখন তা ট্র্যাক করা হয়েছে কিনা তা নিশ্চিত করার জন্য সর্বদা আমাদের অ্যাপের মধ্যে অফারওয়ালগুলি পরীক্ষা করে দেখুন।';
 			case 'offersGuidline9': return '৯). যদি আপনি কোনও গেম/অ্যাপ অফারে আগ্রহী হন, কিন্তু আপনার ডিভাইসে সেই গেম/অ্যাপটি আগে ইনস্টল করা থাকে, তাহলে অনুগ্রহ করে সেই অ্যাপ/গেম সম্পর্কিত অফারটি ব্যবহার করার চেষ্টা করবেন না। আপনার কার্যকলাপের জন্য আপনাকে ক্রেডিট নাও দেওয়া হতে পারে।';
 			case 'offersGuidline10': return '১০). প্রতিটি অফারওয়ালের দেওয়া টিপসগুলি সর্বদা পড়ুন। এগুলিতে প্রায়শই গুরুত্বপূর্ণ বিবরণ থাকে যা অফারগুলি জুড়ে সফলভাবে ট্র্যাক করার সম্ভাবনা সর্বাধিক করতে সাহায্য করতে পারে।';
+			case 'termination': return 'সমাপ্তি';
+			case 'thisPeriodsSettlementIsterminated': return 'এই সময়ের নিষ্পত্তির অবসান!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'নিষ্ক্রিয় ব্যবহারকারী '),
+				x,
+			]);
+			case 'remind': return 'মনে করিয়ে দিন!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'অফলাইন রিমাইন্ডার ৮ ঘন্টার মধ্যে শুধুমাত্র একবার কার্যকর করা যাবে! অনুগ্রহ করে ${x} সেকেন্ড অপেক্ষা করুন এবং আবার চেষ্টা করুন।';
+			case 'noInactiveUsersFoundNow': return 'কোনও নিষ্ক্রিয় ব্যবহারকারী খুঁজে পাওয়া যায়নি';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} জনকে সফলভাবে অবহিত করা হয়েছে!';
+			case 'deltansMiningReminder': return 'ডেল্টানস মাইনিং অনুস্মারক!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'ডেল্টা বন্ধু ${user}: "আপনার মাইনিং বন্ধ হয়ে গেছে।"';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'ডেল্টা অ্যাপে আপনি যে নম্বরটি লিখেছেন তা ছিল ('),
+				fillin,
+				const TextSpan(text: '), কিন্তু যাচাইকরণ স্ট্রিংটি পাঠানোর জন্য আপনি যে নম্বরটি ব্যবহার করেছেন তা ছিল ('),
+				sender,
+				const TextSpan(text: ')। অনুগ্রহ করে এটি সামঞ্জস্য করুন এবং আবার চেষ্টা করুন।'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'ডিক্রিপশন ত্রুটি, আবার চেষ্টা করুন!';
+			case 'reLogin': return 'আবার লগ ইন করুন';
 			default: return null;
 		}
 	}
@@ -21488,6 +22076,27 @@ extension on _StringsCkb {
 			case 'offersGuidline8': return '8). ئەو بەربەستە گرنگانە/ئەرکانەی کە لەلایەن تۆوە تەواو دەکرێن بەزۆری لە سەرانسەری دیوارەکانی ئۆفەرەکاندا تۆمار دەکرێن لە ماوەی چەند خولەکێکدا دوای تەواوبوون، بەڵام لە هەندێک حاڵەتدا، لەوانەیە تا سێ کاتژمێر بخایەنێت، بۆیە تکایە سەبر بگرە لەم جۆرە حاڵەتانەدا. ئەگەر ئەو بڕگەیە تۆمار نەکرا، تکایە دەستت بگات بە پشتگیری کڕیار کە پەیوەندی بە تۆڕی ئۆفەروالەوە هەیە. بەشێکی جیاواز هەیە بۆ پشتگیری کڕیار لە سەرانسەری هەموو دیوارە ئۆفەرێکدا کە دەستت پێدەگات. هەمیشە دڵنیابە کە هەر جارێک کە بڕگەیەکی گرنگ تەواو دەکەیت، دیوارەکانی ئۆفەرەکان لەناو ئەپەکەماندا دەپشکنیت بۆ ئەوەی دڵنیا بیت کە بەدواداچوونی بۆ کراوە.';
 			case 'offersGuidline9': return '9). لە ئەگەری ئەوەی کە تۆ ئارەزووی ئۆفەرێکی یاری/ئەپێک دەکەیت، بەڵام پێشتر ئەو یارییە/ئەپەت لە ئامێرەکەتدا دامەزراندبوو، تکایە هەوڵی ئەو ئۆفەرە مەدە کە پەیوەندی بەو ئەپ/یارییەوە هەیە. لەوانەیە تۆ کریدت بۆ چالاکییەکەت وەرنەگیرێت.';
 			case 'offersGuidline10': return '10). هەمیشە ئەو ئامۆژگارییانە بخوێنەرەوە کە لەلایەن هەر ئۆفەروالێکەوە پێشکەش کراوە. زۆرجار وردەکاری گرنگیان تێدایە کە دەتوانن یارمەتیدەر بن بۆ زۆرترین چانسی بەدواداچوونی سەرکەوتووت لە سەرانسەری ئۆفەرەکاندا.';
+			case 'termination': return 'کۆتاییهێنان بە کۆتایی';
+			case 'thisPeriodsSettlementIsterminated': return 'یەکلاکردنەوەی ئەم ماوەیە کۆتایی پێهات!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'بەکارهێنەری ناچالاک '),
+				x,
+			]);
+			case 'remind': return 'بیرخستنەوە!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'بیرخستنەوەی ئۆفلاین تەنها جارێک دەتوانرێت لە ماوەی ٨ کاتژمێردا جێبەجێ بکرێت! تکایە ${x} چرکە چاوەڕێ بکە و دووبارە هەوڵبدەرەوە.';
+			case 'noInactiveUsersFoundNow': return 'هیچ بەکارهێنەرێکی ناچالاک نەدۆزراوەتەوە';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} کەسەکان بە سەرکەوتوویی ئاگادارکراونەتەوە!';
+			case 'deltansMiningReminder': return 'بیرخستنەوەی کانزاکانی دێڵتانس!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "کانگاکەت وەستاوە."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'ئەو ژمارەیەی کە لە ئەپی Delta داتنووسی ('),
+				fillin,
+				const TextSpan(text: ') بوو، بەڵام ئەو ژمارەیەی کە بەکاری هێنا بۆ ناردنی ڕیزەکەی پشتڕاستکردنەوە ('),
+				sender,
+				const TextSpan(text: ') بوو. تکایە ئەمە ڕێکبخە و دووبارە هەوڵبدەرەوە.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'هەڵەی کۆدکردنەوە، تکایە دووبارە هەوڵبدەرەوە!';
+			case 'reLogin': return 'دووبارە بچۆرەوە ژوورەوە';
 			default: return null;
 		}
 	}
@@ -22207,6 +22816,27 @@ extension on _StringsDe {
 			case 'offersGuidline8': return '8). Die von Ihnen abgeschlossenen Meilensteine/Aufgaben werden in der Regel innerhalb weniger Minuten nach Abschluss in den Offerwalls registriert. In Einzelfällen kann es jedoch bis zu drei Stunden dauern. Bitte haben Sie in solchen Fällen Geduld. Sollte der Meilenstein nicht registriert werden, wenden Sie sich bitte an den Kundensupport des Offerwall-Netzwerks. Für jede Offerwall, auf die Sie zugreifen, gibt es einen separaten Bereich für den Kundensupport. Überprüfen Sie die Offerwalls in unserer App nach jedem abgeschlossenen Meilenstein, um sicherzustellen, dass dieser erfasst wurde.';
 			case 'offersGuidline9': return '9). Falls Sie an einem Spiel-/App-Angebot interessiert sind, dieses Spiel/diese App aber bereits auf Ihrem Gerät installiert haben, versuchen Sie bitte nicht, das entsprechende Angebot in Anspruch zu nehmen. Möglicherweise erhalten Sie für Ihre Aktivität keine Gutschrift.';
 			case 'offersGuidline10': return '10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren.';
+			case 'termination': return 'Beendigung';
+			case 'thisPeriodsSettlementIsterminated': return 'Die Abrechnung für diesen Zeitraum ist beendet!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Inaktiver Benutzer '),
+				x,
+			]);
+			case 'remind': return 'erinnern!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Die Offline-Erinnerung kann nur einmal innerhalb von 8 Stunden ausgeführt werden! Bitte warten Sie ${x} Sekunden und versuchen Sie es erneut.';
+			case 'noInactiveUsersFoundNow': return 'Keine inaktiven Benutzer gefunden';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} Personen wurden erfolgreich benachrichtigt!';
+			case 'deltansMiningReminder': return 'Deltans Mining-Erinnerung!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Ihr Mining wurde gestoppt."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Die Nummer, die Sie in der Delta-App eingegeben haben, war ('),
+				fillin,
+				const TextSpan(text: '), aber die Nummer, von der Sie Ihre Bestätigungszeichenfolge gesendet haben, war ('),
+				sender,
+				const TextSpan(text: '). Bitte korrigieren Sie diese Nummer und versuchen Sie es erneut.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Entschlüsselungsfehler, bitte versuchen Sie es erneut!';
+			case 'reLogin': return 'Melden Sie sich erneut an';
 			default: return null;
 		}
 	}
@@ -22926,6 +23556,27 @@ extension on _StringsEl {
 			case 'offersGuidline8': return '8). Τα ορόσημα/εργασίες που ολοκληρώνετε συνήθως καταγράφονται στα τείχη προσφορών εντός λίγων λεπτών από την ολοκλήρωσή τους, αλλά σε ορισμένες περιπτώσεις, μπορεί να χρειαστούν έως και τρεις ώρες, γι\' αυτό παρακαλούμε να είστε υπομονετικοί σε αυτές τις περιπτώσεις. Εάν το ορόσημο δεν καταχωρηθεί, επικοινωνήστε με την υποστήριξη πελατών του δικτύου Offerwall. Υπάρχει ξεχωριστή ενότητα για την Υποστήριξη Πελατών σε κάθε τείχος προσφορών στο οποίο έχετε πρόσβαση. Βεβαιωθείτε ότι ελέγχετε πάντα τα τείχη προσφορών στην εφαρμογή μας κάθε φορά που ολοκληρώνετε ένα ορόσημο για να βεβαιωθείτε ότι έχει παρακολουθηθεί.';
 			case 'offersGuidline9': return '9). Σε περίπτωση που ενδιαφέρεστε για μια προσφορά παιχνιδιού/εφαρμογής, αλλά είχατε προηγουμένως εγκαταστήσει αυτό το παιχνίδι/εφαρμογή στη συσκευή σας, μην επιχειρήσετε την προσφορά που σχετίζεται με αυτήν την εφαρμογή/παιχνίδι. Ενδέχεται να μην λάβετε πίστωση για τη δραστηριότητά σας.';
 			case 'offersGuidline10': return '10). Να διαβάζετε πάντα τις συμβουλές που παρέχονται από κάθε Προσφοροwall. Συχνά περιέχουν κρίσιμες λεπτομέρειες που μπορούν να σας βοηθήσουν να μεγιστοποιήσετε τις πιθανότητές σας για επιτυχημένη παρακολούθηση όλων των προσφορών.';
+			case 'termination': return 'Λήξη';
+			case 'thisPeriodsSettlementIsterminated': return 'Η διευθέτηση αυτής της περιόδου τερματίζεται!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Ανενεργός χρήστης '),
+				x,
+			]);
+			case 'remind': return 'υπενθυμίζω!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Η υπενθύμιση εκτός σύνδεσης μπορεί να εκτελεστεί μόνο μία φορά εντός 8 ωρών! Παρακαλώ περιμένετε ${x} δευτερόλεπτα και προσπαθήστε ξανά.';
+			case 'noInactiveUsersFoundNow': return 'Δεν βρέθηκαν ανενεργοί χρήστες';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} άτομα έχουν ειδοποιηθεί με επιτυχία!';
+			case 'deltansMiningReminder': return 'Υπενθύμιση για την εξόρυξη Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Η εξόρυξη σας έχει σταματήσει."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Ο αριθμός που εισαγάγατε στην εφαρμογή Delta ήταν ('),
+				fillin,
+				const TextSpan(text: '), αλλά ο αριθμός από τον οποίο στείλατε τη συμβολοσειρά επαλήθευσης ήταν ('),
+				sender,
+				const TextSpan(text: '). Παρακαλούμε προσαρμόστε τον και δοκιμάστε ξανά.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Σφάλμα αποκρυπτογράφησης, δοκιμάστε ξανά!';
+			case 'reLogin': return 'Συνδεθείτε ξανά';
 			default: return null;
 		}
 	}
@@ -23646,6 +24297,27 @@ extension on _StringsEs {
 			case 'offersGuidline8': return '8) Los hitos o tareas que completes suelen registrarse en los Offerwalls en cuestión de minutos, pero en algunos casos puede tardar hasta tres horas, así que ten paciencia. Si el hito no se registra, contacta con el servicio de atención al cliente de la red Offerwall. Hay una sección independiente para el servicio de atención al cliente en cada Offerwall al que accedas. Asegúrate de consultar los Offerwalls en nuestra app cada vez que completes un hito para asegurarte de que se haya registrado.';
 			case 'offersGuidline9': return '9) Si te interesa una oferta de un juego o aplicación, pero ya la tenías instalada en tu dispositivo, no intentes usarla. Es posible que no se te acredite tu actividad.';
 			case 'offersGuidline10': return '10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas.';
+			case 'termination': return 'Terminación';
+			case 'thisPeriodsSettlementIsterminated': return '¡La liquidación de este período ha finalizado!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Usuario inactivo '),
+				x,
+			]);
+			case 'remind': return '¡recordar!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'El recordatorio sin conexión solo se puede ejecutar una vez cada 8 horas. Espere ${x} segundos y vuelva a intentarlo.';
+			case 'noInactiveUsersFoundNow': return 'No se encontraron usuarios inactivos';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '¡${x} personas han sido notificadas exitosamente!';
+			case 'deltansMiningReminder': return '¡Recordatorio de minería de Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'amigo delta ${user}: "Tu minería se ha detenido."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'El número que ingresaste en la aplicación Delta fue ('),
+				fillin,
+				const TextSpan(text: '), pero el número desde el que enviaste tu verificación fue ('),
+				sender,
+				const TextSpan(text: '). Ajústalo y vuelve a intentarlo.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Error de descifrado, ¡inténtalo de nuevo!';
+			case 'reLogin': return 'Iniciar sesión de nuevo';
 			default: return null;
 		}
 	}
@@ -24366,6 +25038,27 @@ extension on _StringsFr {
 			case 'offersGuidline8': return '8) Les étapes/tâches que vous avez complétées sont généralement enregistrées sur les Offerwalls quelques minutes après leur achèvement, mais dans certains cas, cela peut prendre jusqu\'à trois heures ; veuillez donc patienter. Si l\'étape n\'est pas enregistrée, veuillez contacter le service client du réseau Offerwall. Une section dédiée au service client est disponible sur chaque Offerwall auquel vous accédez. Assurez-vous de toujours consulter les Offerwalls dans notre application chaque fois que vous franchissez une étape pour vous assurer qu\'elle a bien été suivie.';
 			case 'offersGuidline9': return '9) Si vous êtes intéressé par une offre de jeu ou d\'application, mais que vous l\'aviez déjà installée sur votre appareil, veuillez ne pas tenter de participer à l\'offre correspondante. Votre activité pourrait ne pas être créditée.';
 			case 'offersGuidline10': return '10) Lisez toujours les conseils fournis par chaque Offerwall. Ils contiennent souvent des informations cruciales qui peuvent vous aider à maximiser vos chances de succès dans le suivi des offres.';
+			case 'termination': return 'Terminaison';
+			case 'thisPeriodsSettlementIsterminated': return 'Le règlement de cette période est terminé !';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Utilisateur inactif '),
+				x,
+			]);
+			case 'remind': return 'rappeler!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Le rappel hors ligne ne peut être exécuté qu\'une seule fois en 8 heures ! Veuillez patienter ${x} secondes et réessayer.';
+			case 'noInactiveUsersFoundNow': return 'Aucun utilisateur inactif trouvé';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} personnes ont été notifiées avec succès !';
+			case 'deltansMiningReminder': return 'Rappel sur l\'exploitation minière de Deltans !';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'ami delta ${user} : « Votre minage s\'est arrêté. »';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Le numéro saisi dans l\'application Delta était ('),
+				fillin,
+				const TextSpan(text: '), mais le numéro utilisé pour envoyer votre chaîne de vérification était ('),
+				sender,
+				const TextSpan(text: '). Veuillez ajuster ce paramètre et réessayer.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Erreur de décryptage, veuillez réessayer !';
+			case 'reLogin': return 'Connectez-vous à nouveau';
 			default: return null;
 		}
 	}
@@ -25082,6 +25775,27 @@ extension on _StringsHi {
 			case 'offersGuidline8': return '8). आपके द्वारा पूरे किए गए माइलस्टोन/कार्य आमतौर पर कुछ ही मिनटों में ऑफ़रवॉल पर दर्ज हो जाते हैं, लेकिन कुछ मामलों में, इसमें तीन घंटे तक का समय लग सकता है, इसलिए कृपया ऐसे मामलों में धैर्य रखें। अगर माइलस्टोन दर्ज नहीं होता है, तो कृपया ऑफ़रवॉल नेटवर्क से संबंधित ग्राहक सहायता से संपर्क करें। आपके द्वारा एक्सेस किए जाने वाले प्रत्येक ऑफ़रवॉल में ग्राहक सहायता के लिए एक अलग सेक्शन होता है। हर बार जब आप कोई माइलस्टोन पूरा करते हैं, तो यह सुनिश्चित करने के लिए कि उसे ट्रैक किया गया है, हमारे ऐप में ऑफ़रवॉल की जाँच अवश्य करें।';
 			case 'offersGuidline9': return '9) अगर आप किसी गेम/ऐप ऑफ़र में रुचि रखते हैं, लेकिन आपके डिवाइस में वह गेम/ऐप पहले से इंस्टॉल है, तो कृपया उस ऐप/गेम से संबंधित ऑफ़र का इस्तेमाल न करें। हो सकता है कि आपको आपकी गतिविधि का क्रेडिट न मिले।';
 			case 'offersGuidline10': return '10) हर ऑफ़रवॉल द्वारा दिए गए सुझावों को हमेशा पढ़ें। इनमें अक्सर महत्वपूर्ण विवरण होते हैं जो ऑफ़र पर सफलतापूर्वक नज़र रखने की आपकी संभावनाओं को अधिकतम करने में मदद कर सकते हैं।';
+			case 'termination': return 'समापन';
+			case 'thisPeriodsSettlementIsterminated': return 'इस अवधि का निपटान समाप्त हो गया है!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'निष्क्रिय उपयोगकर्ता '),
+				x,
+			]);
+			case 'remind': return 'याद दिलाना!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'ऑफ़लाइन रिमाइंडर 8 घंटों में केवल एक बार ही चलाया जा सकता है! कृपया ${x} सेकंड प्रतीक्षा करें और पुनः प्रयास करें।';
+			case 'noInactiveUsersFoundNow': return 'कोई निष्क्रिय उपयोगकर्ता नहीं मिला';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} लोगों को सफलतापूर्वक सूचित कर दिया गया है!';
+			case 'deltansMiningReminder': return 'डेल्टांस खनन अनुस्मारक!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'डेल्टा मित्र ${user}: "आपका खनन बंद हो गया है।"';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'डेल्टा ऐप पर आपने जो नंबर डाला था वह ('),
+				fillin,
+				const TextSpan(text: ') था, लेकिन सत्यापन स्ट्रिंग भेजने के लिए आपने जो नंबर इस्तेमाल किया वह ('),
+				sender,
+				const TextSpan(text: ') था। कृपया इसे समायोजित करें और पुनः प्रयास करें।'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'डिक्रिप्शन त्रुटि, कृपया पुनः प्रयास करें!';
+			case 'reLogin': return 'फिर से लॉगिन करें';
 			default: return null;
 		}
 	}
@@ -25800,6 +26514,27 @@ extension on _StringsIt {
 			case 'offersGuidline8': return '8). Le milestone/attività completate vengono solitamente registrate su tutti gli offerwall entro pochi minuti dal completamento, ma in alcuni casi potrebbero essere necessarie fino a tre ore, quindi sii paziente in questi casi. Se la milestone non viene registrata, contatta l\'assistenza clienti della rete Offerwall. È presente una sezione dedicata all\'assistenza clienti in ogni Offerwall a cui accedi. Assicurati sempre di controllare gli offerwall all\'interno della nostra app ogni volta che completi una milestone per assicurarti che sia stata tracciata.';
 			case 'offersGuidline9': return '9) Se sei interessato a un\'offerta relativa a un gioco/app, ma in precedenza avevi installato quel gioco/app sul tuo dispositivo, ti preghiamo di non tentare l\'offerta relativa a quell\'app/gioco. Potresti non ricevere alcun accredito per la tua attività.';
 			case 'offersGuidline10': return '10) Leggi sempre i suggerimenti forniti da ogni Offerwall. Spesso contengono dettagli cruciali che possono aiutarti a massimizzare le tue possibilità di successo nel tracciamento delle offerte.';
+			case 'termination': return 'Risoluzione';
+			case 'thisPeriodsSettlementIsterminated': return 'Il periodo di liquidazione è terminato!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Utente inattivo '),
+				x,
+			]);
+			case 'remind': return 'ricordare!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Il promemoria offline può essere eseguito solo una volta ogni 8 ore! Attendi ${x} secondi e riprova.';
+			case 'noInactiveUsersFoundNow': return 'Nessun utente inattivo trovato';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} persone sono state avvisate con successo!';
+			case 'deltansMiningReminder': return 'Promemoria per l\'attività mineraria dei Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'amico delta ${user}: "Il tuo mining è stato interrotto."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Il numero inserito nell\'app Delta era ('),
+				fillin,
+				const TextSpan(text: '), ma il numero da cui hai inviato la stringa di verifica era ('),
+				sender,
+				const TextSpan(text: '). Modifica questo valore e riprova.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Errore di decrittazione, riprova!';
+			case 'reLogin': return 'Accedi di nuovo';
 			default: return null;
 		}
 	}
@@ -26517,6 +27252,27 @@ extension on _StringsJa {
 			case 'offersGuidline8': return '8) 完了したマイルストーン/タスクは通常、完了後数分以内にオファーウォール全体に反映されますが、場合によっては最大3時間かかることもありますので、その際はしばらくお待ちください。マイルストーンが反映されない場合は、オファーウォールネットワークのカスタマーサポートまでお問い合わせください。アクセスするオファーウォールごとにカスタマーサポート専用のセクションがあります。マイルストーンを達成するたびに、アプリ内のオファーウォールで追跡されていることを確認してください。';
 			case 'offersGuidline9': return '9) ゲーム/アプリのオファーに興味があるものの、既にデバイスにそのゲーム/アプリがインストールされている場合は、そのアプリ/ゲームに関連するオファーをご利用にならないでください。アクティビティがクレジットされない可能性があります。';
 			case 'offersGuidline10': return '10）各オファーウォールで提供されているヒントを必ず読んでください。オファーウォール全体におけるトラッキング成功率を最大化するのに役立つ重要な詳細が含まれていることがよくあります。';
+			case 'termination': return '終了';
+			case 'thisPeriodsSettlementIsterminated': return '今期の決済は終了しました！';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '非アクティブユーザー '),
+				x,
+			]);
+			case 'remind': return '思い出させる！';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'オフラインリマインダーは8時間以内に1回のみ実行できます。${x}秒待ってからもう一度お試しください。';
+			case 'noInactiveUsersFoundNow': return '非アクティブなユーザーは見つかりませんでした';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} 人に通知が完了しました。';
+			case 'deltansMiningReminder': return 'デルタンズ採掘リマインダー！';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'デルタフレンド ${user}:「採掘が停止しました。」';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Deltaアプリに入力した番号は('),
+				fillin,
+				const TextSpan(text: ')ですが、確認文字列の送信に使用した番号は('),
+				sender,
+				const TextSpan(text: ')です。番号を修正してもう一度お試しください。'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return '復号化エラーが発生しました。もう一度お試しください。';
+			case 'reLogin': return '再度ログイン';
 			default: return null;
 		}
 	}
@@ -27236,6 +27992,27 @@ extension on _StringsKo {
 			case 'offersGuidline8': return '8) 완료하신 마일스톤/작업은 일반적으로 완료 후 몇 분 이내에 오퍼월 전체에 등록되지만, 경우에 따라 최대 3시간까지 소요될 수 있으니 양해 부탁드립니다. 마일스톤이 등록되지 않을 경우, 오퍼월 네트워크 관련 고객 지원팀에 문의해 주세요. 모든 오퍼월에는 고객 지원팀이 별도로 마련되어 있습니다. 마일스톤을 완료할 때마다 앱 내 오퍼월을 확인하여 마일스톤이 제대로 추적되었는지 확인하세요.';
 			case 'offersGuidline9': return '9) 게임/앱 혜택에 관심이 있지만 이전에 기기에 해당 게임/앱을 설치한 적이 있는 경우, 해당 앱/게임과 관련된 혜택을 시도하지 마세요. 활동 내역이 적립되지 않을 수 있습니다.';
 			case 'offersGuidline10': return '10) 각 오퍼월에서 제공하는 팁을 항상 읽어보세요. 여기에는 오퍼 전반의 추적 성공률을 극대화하는 데 도움이 되는 중요한 정보가 포함되어 있는 경우가 많습니다.';
+			case 'termination': return '종료';
+			case 'thisPeriodsSettlementIsterminated': return '이 기간의 결제는 종료됩니다!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '비활성 사용자 '),
+				x,
+			]);
+			case 'remind': return '상기시키다!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => '오프라인 알림은 8시간 내에 한 번만 실행할 수 있습니다! ${x}초 동안 기다린 후 다시 시도하세요.';
+			case 'noInactiveUsersFoundNow': return '비활성 사용자가 없습니다.';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x}명에게 성공적으로 알림이 전달되었습니다!';
+			case 'deltansMiningReminder': return '델타인 채굴 알림!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => '델타 친구 ${user}: "채굴이 중단되었습니다."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: '델타 앱에 입력하신 번호는 ('),
+				fillin,
+				const TextSpan(text: ')이지만, 인증 문자열을 보낸 번호는 ('),
+				sender,
+				const TextSpan(text: ')입니다. 이 번호를 조정하여 다시 시도해 주세요.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return '복호화 오류가 발생했습니다. 다시 시도해 주세요!';
+			case 'reLogin': return '다시 로그인하세요';
 			default: return null;
 		}
 	}
@@ -27955,6 +28732,27 @@ extension on _StringsNl {
 			case 'offersGuidline8': return '8). De mijlpalen/taken die je voltooit, worden meestal binnen enkele minuten na voltooiing geregistreerd op de offerwalls, maar in sommige gevallen kan dit tot drie uur duren. Wees daarom geduldig. Als de mijlpaal niet wordt geregistreerd, neem dan contact op met de klantenservice van het Offerwall-netwerk. Er is een aparte sectie voor klantenservice voor elke Offerwall die je bezoekt. Controleer altijd de offerwalls in onze app elke keer dat je een mijlpaal voltooit om er zeker van te zijn dat deze is bijgehouden.';
 			case 'offersGuidline9': return '9). Als je geïnteresseerd bent in een game-/app-aanbieding, maar je had die game/app al op je apparaat geïnstalleerd, probeer dan niet op de aanbieding voor die app/game in te gaan. Je krijgt mogelijk geen tegoed voor je activiteit.';
 			case 'offersGuidline10': return '10). Lees altijd de tips die bij elke Offerwall worden gegeven. Deze bevatten vaak cruciale details die je kansen op succesvolle tracking van de aanbiedingen kunnen maximaliseren.';
+			case 'termination': return 'Beëindiging';
+			case 'thisPeriodsSettlementIsterminated': return 'De afrekening van deze periode is beëindigd!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Inactieve gebruiker '),
+				x,
+			]);
+			case 'remind': return 'herinneren!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Offline herinnering kan slechts één keer binnen 8 uur worden uitgevoerd! Wacht ${x} seconden en probeer het opnieuw.';
+			case 'noInactiveUsersFoundNow': return 'Geen inactieve gebruikers gevonden';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} mensen zijn succesvol op de hoogte gebracht!';
+			case 'deltansMiningReminder': return 'Herinnering aan Deltans Mining!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta-vriend ${user}: "Je mining is gestopt."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Het nummer dat je in de Delta-app hebt ingevoerd, was ('),
+				fillin,
+				const TextSpan(text: '), maar het nummer waarmee je je verificatiestring hebt verzonden, was ('),
+				sender,
+				const TextSpan(text: '). Pas dit aan en probeer het opnieuw.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Fout bij het decoderen. Probeer het opnieuw!';
+			case 'reLogin': return 'Opnieuw inloggen';
 			default: return null;
 		}
 	}
@@ -28675,6 +29473,27 @@ extension on _StringsPl {
 			case 'offersGuidline8': return '8). Kamienie milowe/zadania, które ukończyłeś/ukończyłaś, są zazwyczaj rejestrowane na Offerwallach w ciągu kilku minut od ich ukończenia, ale w niektórych przypadkach może to potrwać do trzech godzin, dlatego prosimy o cierpliwość. Jeśli kamień milowy nie zostanie zarejestrowany, skontaktuj się z obsługą klienta sieci Offerwall. W każdej witrynie Offerwall, do której uzyskujesz dostęp, znajduje się osobna sekcja obsługi klienta. Zawsze sprawdzaj Offerwalle w naszej aplikacji po każdym ukończeniu kamienia milowego, aby upewnić się, że został on zarejestrowany.';
 			case 'offersGuidline9': return '9). Jeśli jesteś zainteresowany ofertą gry/aplikacji, ale miałeś ją wcześniej zainstalowaną na swoim urządzeniu, nie próbuj skorzystać z oferty dotyczącej tej gry/aplikacji. Możesz nie otrzymać punktów za swoją aktywność.';
 			case 'offersGuidline10': return '10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert.';
+			case 'termination': return 'Zakończenie';
+			case 'thisPeriodsSettlementIsterminated': return 'Rozliczenie tego okresu zostało zakończone!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Nieaktywny użytkownik '),
+				x,
+			]);
+			case 'remind': return 'przypomnieć!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Przypomnienie offline można wykonać tylko raz w ciągu 8 godzin! Odczekaj ${x} sekund i spróbuj ponownie.';
+			case 'noInactiveUsersFoundNow': return 'Nie znaleziono nieaktywnych użytkowników';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} osób zostało pomyślnie powiadomionych!';
+			case 'deltansMiningReminder': return 'Przypomnienie o górnictwie Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Twoje wydobycie zostało zatrzymane."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Numer, który podałeś w aplikacji Delta, to ('),
+				fillin,
+				const TextSpan(text: '), ale numer, z którego wysłałeś ciąg weryfikacyjny, to ('),
+				sender,
+				const TextSpan(text: '). Popraw to i spróbuj ponownie.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Błąd deszyfrowania, spróbuj ponownie!';
+			case 'reLogin': return 'Zaloguj się ponownie';
 			default: return null;
 		}
 	}
@@ -29394,6 +30213,27 @@ extension on _StringsPt {
 			case 'offersGuidline8': return '8). Os marcos/tarefas concluídos por você geralmente são registrados nos Offerwalls poucos minutos após a conclusão, mas, em certos casos, pode levar até três horas, portanto, seja paciente. Caso o marco não seja registrado, entre em contato com o suporte ao cliente da rede Offerwall. Há uma seção dedicada ao Suporte ao Cliente em cada Offerwall que você acessa. Certifique-se sempre de verificar os Offerwalls em nosso aplicativo sempre que concluir um marco para garantir que ele tenha sido rastreado.';
 			case 'offersGuidline9': return '9). Caso você esteja interessado em uma oferta de jogo/aplicativo, mas já o tenha instalado em seu dispositivo, não tente a oferta referente a esse aplicativo/jogo. Você pode não receber créditos pela sua atividade.';
 			case 'offersGuidline10': return '10) Leia sempre as dicas fornecidas por cada Offerwall. Elas geralmente contêm detalhes cruciais que podem ajudar a maximizar suas chances de sucesso no rastreamento de todas as ofertas.';
+			case 'termination': return 'Rescisão';
+			case 'thisPeriodsSettlementIsterminated': return 'A liquidação deste período foi encerrada!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Usuário inativo '),
+				x,
+			]);
+			case 'remind': return 'lembrar!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'O lembrete offline só pode ser executado uma vez a cada 8 horas! Aguarde ${x} segundos e tente novamente.';
+			case 'noInactiveUsersFoundNow': return 'Nenhum usuário inativo encontrado';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} pessoas foram notificadas com sucesso!';
+			case 'deltansMiningReminder': return 'Lembrete de Mineração Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'amigo delta ${user}: "Sua mineração foi interrompida."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'O número que você inseriu no aplicativo Delta foi ('),
+				fillin,
+				const TextSpan(text: '), mas o número que você usou para enviar a string de verificação foi ('),
+				sender,
+				const TextSpan(text: '). Ajuste isso e tente novamente.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Erro de descriptografia, tente novamente!';
+			case 'reLogin': return 'Efetue login novamente';
 			default: return null;
 		}
 	}
@@ -30112,6 +30952,27 @@ extension on _StringsRo {
 			case 'offersGuidline8': return '8). Etapele/sarcinile finalizate de dvs. sunt de obicei înregistrate pe Offerwall-uri în câteva minute de la finalizare, dar în anumite cazuri, poate dura până la trei ore, așa că vă rugăm să aveți răbdare în astfel de cazuri. Dacă etapa nu este înregistrată, vă rugăm să contactați serviciul de asistență pentru clienți din rețeaua Offerwall. Există o secțiune separată pentru Asistență pentru clienți pe fiecare Offerwall pe care îl accesați. Asigurați-vă întotdeauna că verificați ofertewall-urile din aplicația noastră de fiecare dată când finalizați o etapă pentru a vă asigura că a fost urmărită.';
 			case 'offersGuidline9': return '9). În cazul în care sunteți interesat de o ofertă pentru un joc/o aplicație, dar ați avut anterior jocul/aplicația respectivă instalată pe dispozitiv, vă rugăm să nu încercați oferta aferentă aplicației/jocului respectiv. Este posibil să nu fiți creditat pentru activitatea dvs.';
 			case 'offersGuidline10': return '10). Citiți întotdeauna sfaturile oferite de fiecare Offerwall. Acestea conțin adesea detalii cruciale care vă pot ajuta să maximizați șansele de urmărire cu succes a ofertelor.';
+			case 'termination': return 'Terminare';
+			case 'thisPeriodsSettlementIsterminated': return 'Decontarea pentru această perioadă s-a încheiat!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Utilizator inactiv '),
+				x,
+			]);
+			case 'remind': return 'reaminti!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Memento-ul offline poate fi executat o singură dată în 8 ore! Vă rugăm să așteptați ${x} secunde și să încercați din nou.';
+			case 'noInactiveUsersFoundNow': return 'Nu au fost găsiți utilizatori inactivi';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} persoane au fost notificate cu succes!';
+			case 'deltansMiningReminder': return 'Memento pentru mineritul Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: „Mineritul ți s-a oprit.”';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Numărul introdus în aplicația Delta a fost ('),
+				fillin,
+				const TextSpan(text: '), dar numărul folosit pentru a trimite șirul de verificare a fost ('),
+				sender,
+				const TextSpan(text: '). Vă rugăm să ajustați această valoare și să încercați din nou.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Eroare de decriptare, vă rugăm să încercați din nou!';
+			case 'reLogin': return 'Conectați-vă din nou';
 			default: return null;
 		}
 	}
@@ -30832,6 +31693,27 @@ extension on _StringsRu {
 			case 'offersGuidline8': return '8). Выполненные вами этапы/задачи обычно регистрируются на Offerwalls в течение нескольких минут после завершения, но в некоторых случаях это может занять до трёх часов, поэтому, пожалуйста, проявите терпение. Если этап не регистрируется, обратитесь в службу поддержки клиентов сети Offerwall. Для каждого Offerwall, к которому вы обращаетесь, есть отдельный раздел для службы поддержки клиентов. Всегда проверяйте offerwalls в нашем приложении каждый раз после завершения этапа, чтобы убедиться, что он отслежен.';
 			case 'offersGuidline9': return '9) Если вас интересует предложение игры/приложения, но оно уже было установлено на вашем устройстве, пожалуйста, не пытайтесь воспользоваться предложением, связанным с этим приложением/игрой. Бонусы за вашу активность могут быть не засчитаны.';
 			case 'offersGuidline10': return '10) Всегда читайте советы, представленные на каждом Offerwall. Они часто содержат важную информацию, которая поможет вам максимально увеличить шансы на успешное отслеживание предложений.';
+			case 'termination': return 'Прекращение';
+			case 'thisPeriodsSettlementIsterminated': return 'Расчет за этот период прекращается!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Неактивный пользователь '),
+				x,
+			]);
+			case 'remind': return 'напоминать!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Офлайн-напоминание можно выполнить только один раз в течение 8 часов! Подождите ${x} секунд и повторите попытку.';
+			case 'noInactiveUsersFoundNow': return 'Неактивных пользователей не найдено.';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} человек были успешно оповещены!';
+			case 'deltansMiningReminder': return 'Напоминание о горнодобывающей промышленности Дельтанса!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta друг ${user}: «Ваш майнинг остановлен».';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Номер, который вы ввели в приложении Delta, был ('),
+				fillin,
+				const TextSpan(text: '), но номер, с которого вы отправили проверочную строку, был ('),
+				sender,
+				const TextSpan(text: '). Исправьте это и повторите попытку.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Ошибка расшифровки, попробуйте еще раз!';
+			case 'reLogin': return 'Войти снова';
 			default: return null;
 		}
 	}
@@ -31547,6 +32429,27 @@ extension on _StringsSw {
 			case 'offersGuidline8': return '8). Mafanikio/majukumu yanayokamilishwa na wewe kwa kawaida husajiliwa kote kwenye kuta ndani ya dakika chache baada ya kukamilika, lakini katika hali fulani, inaweza kuchukua hadi saa tatu, kwa hivyo tafadhali kuwa na subira katika hali kama hizi. Ikiwa hatua muhimu haitasajiliwa, tafadhali wasiliana na usaidizi kwa wateja unaohusiana na mtandao wa Offerwall. Kuna sehemu tofauti ya Usaidizi kwa Wateja katika kila Ofa unayofikia. Daima hakikisha unaangalia kuta za ofa ndani ya programu yetu kila mara unapomaliza hatua muhimu ili kuhakikisha kuwa imefuatiliwa.';
 			case 'offersGuidline9': return '9). Iwapo ungependa kupata ofa ya mchezo/programu, lakini hapo awali ulikuwa na mchezo/programu hiyo iliyosakinishwa kwenye kifaa chako, tafadhali usijaribu toleo linalohusiana na programu/mchezo huo. Huenda usipewe sifa kwa shughuli yako.';
 			case 'offersGuidline10': return '10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote.';
+			case 'termination': return 'Kukomesha';
+			case 'thisPeriodsSettlementIsterminated': return 'Suluhu ya kipindi hiki imekatishwa!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Mtumiaji asiyetumika '),
+				x,
+			]);
+			case 'remind': return 'kumbusha!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Kikumbusho cha nje ya mtandao kinaweza tu kutekelezwa mara moja ndani ya saa 8! Tafadhali subiri sekunde ${x} na ujaribu tena.';
+			case 'noInactiveUsersFoundNow': return 'Hakuna watumiaji wasiotumia waliopatikana';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => 'Watu ${x} wamearifiwa!';
+			case 'deltansMiningReminder': return 'Kikumbusho cha Madini ya Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'rafiki wa delta ${user}: "Uchimbaji madini wako umekoma."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Nambari uliyoweka kwenye programu ya Delta ilikuwa ('),
+				fillin,
+				const TextSpan(text: '), lakini nambari uliyotuma mfuatano wako wa uthibitishaji ilikuwa ('),
+				sender,
+				const TextSpan(text: '). Tafadhali rekebisha hii na ujaribu tena.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Hitilafu ya usimbuaji, tafadhali jaribu tena!';
+			case 'reLogin': return 'Ingia tena';
 			default: return null;
 		}
 	}
@@ -32265,6 +33168,27 @@ extension on _StringsTh {
 			case 'offersGuidline8': return '8) โดยปกติแล้ว ความสำเร็จ/งานที่คุณทำเสร็จจะถูกบันทึกลงใน Offerwall ภายในไม่กี่นาทีหลังจากเสร็จสิ้น แต่ในบางกรณีอาจใช้เวลานานถึงสามชั่วโมง ดังนั้นโปรดอดทนรอ หากความสำเร็จ/งานไม่ได้รับการบันทึก โปรดติดต่อฝ่ายสนับสนุนลูกค้าที่เกี่ยวข้องกับเครือข่าย Offerwall มีส่วนแยกต่างหากสำหรับฝ่ายสนับสนุนลูกค้าในทุก Offerwall ที่คุณเข้าถึง โปรดตรวจสอบ Offerwall ในแอปของเราทุกครั้งที่คุณทำความสำเร็จ/งานเสร็จ เพื่อให้มั่นใจว่ามีการติดตามความคืบหน้า';
 			case 'offersGuidline9': return '9) หากคุณสนใจข้อเสนอเกม/แอป แต่คุณได้ติดตั้งเกม/แอปนั้นไว้ในอุปกรณ์ของคุณแล้ว โปรดอย่าพยายามใช้ข้อเสนอที่เกี่ยวข้องกับแอป/เกมนั้น คุณอาจไม่ได้รับเครดิตสำหรับกิจกรรมของคุณ';
 			case 'offersGuidline10': return '10) อ่านเคล็ดลับต่างๆ ที่ Offerwall จัดเตรียมไว้ให้เสมอ ซึ่งมักจะมีรายละเอียดสำคัญที่ช่วยเพิ่มโอกาสในการติดตามข้อเสนอต่างๆ สำเร็จ';
+			case 'termination': return 'การยุติ';
+			case 'thisPeriodsSettlementIsterminated': return 'งวดนี้สิ้นสุดแล้ว!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'ผู้ใช้ที่ไม่ได้ใช้งาน '),
+				x,
+			]);
+			case 'remind': return 'เตือน!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'การแจ้งเตือนแบบออฟไลน์สามารถดำเนินการได้เพียงครั้งเดียวภายใน 8 ชั่วโมง! โปรดรอ ${x} วินาทีแล้วลองอีกครั้ง';
+			case 'noInactiveUsersFoundNow': return 'ไม่พบผู้ใช้ที่ไม่ได้ใช้งาน';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => 'มีการแจ้งเตือนเรียบร้อยแล้ว ${x} คน!';
+			case 'deltansMiningReminder': return 'คำเตือนเรื่องการขุดของเดลตัน!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'เพื่อนเดลต้า ${user}: "การขุดของคุณหยุดแล้ว"';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'หมายเลขที่คุณป้อนในแอป Delta คือ ('),
+				fillin,
+				const TextSpan(text: ') แต่หมายเลขที่คุณใช้ส่งสตริงยืนยันคือ ('),
+				sender,
+				const TextSpan(text: ') โปรดปรับค่านี้และลองอีกครั้ง'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'เกิดข้อผิดพลาดในการถอดรหัส โปรดลองอีกครั้ง!';
+			case 'reLogin': return 'เข้าสู่ระบบอีกครั้ง';
 			default: return null;
 		}
 	}
@@ -32983,6 +33907,27 @@ extension on _StringsTr {
 			case 'offersGuidline8': return '8). Tamamladığınız kilometre taşları/görevler genellikle tamamlandıktan sonra birkaç dakika içinde offerwall\'lara kaydedilir, ancak bazı durumlarda üç saate kadar sürebilir, bu nedenle lütfen bu gibi durumlarda sabırlı olun. Kilometre taşı kaydedilmezse, lütfen Offerwall ağıyla ilgili müşteri desteğiyle iletişime geçin. Eriştiğiniz her Offerwall\'da Müşteri Desteği için ayrı bir bölüm bulunur. Bir kilometre taşını tamamladığınızda, takip edildiğinden emin olmak için uygulamamızdaki offerwall\'ları kontrol ettiğinizden emin olun.';
 			case 'offersGuidline9': return '9). Bir oyun/uygulama teklifiyle ilgileniyorsanız, ancak söz konusu oyun/uygulama daha önce cihazınıza yüklenmişse, lütfen söz konusu uygulama/oyunla ilgili teklifi denemeyin. Etkinliğiniz için kredi alamayabilirsiniz.';
 			case 'offersGuidline10': return '10). Her Offerwall tarafından sağlanan ipuçlarını mutlaka okuyun. Bunlar genellikle, teklifler arasında başarılı bir şekilde takip etme şansınızı en üst düzeye çıkarabilecek önemli ayrıntılar içerir.';
+			case 'termination': return 'Fesih';
+			case 'thisPeriodsSettlementIsterminated': return 'Bu dönemin yerleşimi sona ermiştir!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Etkin olmayan kullanıcı '),
+				x,
+			]);
+			case 'remind': return 'hatırlatmak!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Çevrimdışı hatırlatma 8 saat içinde yalnızca bir kez çalıştırılabilir! Lütfen ${x} saniye bekleyin ve tekrar deneyin.';
+			case 'noInactiveUsersFoundNow': return 'Etkin olmayan kullanıcı bulunamadı';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} kişiye başarıyla bildirim gönderildi!';
+			case 'deltansMiningReminder': return 'Deltans Madencilik Hatırlatması!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Madenciliğiniz durduruldu."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Delta uygulamasına girdiğiniz numara ('),
+				fillin,
+				const TextSpan(text: ') idi, ancak doğrulama dizenizi gönderdiğiniz numara ('),
+				sender,
+				const TextSpan(text: ') idi. Lütfen bunu düzeltip tekrar deneyin.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Şifre çözme hatası, lütfen tekrar deneyin!';
+			case 'reLogin': return 'Tekrar giriş yapın';
 			default: return null;
 		}
 	}
@@ -33702,6 +34647,27 @@ extension on _StringsUk {
 			case 'offersGuidline8': return '8). Виконані вами етапи/завдання зазвичай реєструються на стінах пропозицій протягом кількох хвилин після їх завершення, але в деяких випадках це може зайняти до трьох годин, тому будьте терплячими. Якщо етап не зареєстровано, зверніться до служби підтримки клієнтів мережі Offerwall. На кожному Offerwall, до якого ви отримуєте доступ, є окремий розділ для підтримки клієнтів. Завжди перевіряйте стіни пропозицій у нашому додатку щоразу, коли ви завершуєте етап, щоб переконатися, що його було відстежено.';
 			case 'offersGuidline9': return '9). Якщо вас зацікавила пропозиція гри/додатку, але ця гра/додаток раніше була встановлена на вашому пристрої, будь ласка, не намагайтеся скористатися пропозицією, що стосується цієї програми/гри. Вам можуть не нарахувати винагороду за вашу активність.';
 			case 'offersGuidline10': return '10). Завжди читайте поради, надані на кожному Offerwall. Вони часто містять важливі деталі, які можуть допомогти максимізувати ваші шанси на успішне відстеження пропозицій.';
+			case 'termination': return 'Припинення';
+			case 'thisPeriodsSettlementIsterminated': return 'Розрахунок за цей період припинено!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Неактивний користувач '),
+				x,
+			]);
+			case 'remind': return 'нагадай!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Нагадування офлайн можна виконати лише один раз протягом 8 годин! Будь ласка, зачекайте ${x} секунд і спробуйте ще раз.';
+			case 'noInactiveUsersFoundNow': return 'Неактивних користувачів не знайдено';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} осіб успішно сповіщено!';
+			case 'deltansMiningReminder': return 'Нагадування про видобуток корисних копалин у Дельтані!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'дельта-друг ${user}: "Ваш майнінг зупинено."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Номер, який ви ввели в застосунку Delta, був ('),
+				fillin,
+				const TextSpan(text: '), але номер, з якого ви надіслали рядок підтвердження, був ('),
+				sender,
+				const TextSpan(text: '). Будь ласка, виправте його та спробуйте ще раз.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Помилка розшифрування, спробуйте ще раз!';
+			case 'reLogin': return 'Увійти знову';
 			default: return null;
 		}
 	}
@@ -34420,6 +35386,27 @@ extension on _StringsUr {
 			case 'offersGuidline8': return '8)۔ آپ کی طرف سے مکمل کیے گئے سنگ میل/کام عام طور پر مکمل ہونے کے چند منٹوں کے اندر اندر آفر والز پر رجسٹر کیے جاتے ہیں، لیکن بعض صورتوں میں، اس میں تین گھنٹے تک لگ سکتے ہیں، اس لیے براہ کرم ایسے معاملات میں صبر کریں۔ اگر سنگ میل رجسٹرڈ نہیں ہوتا ہے، تو براہ کرم آفر وال نیٹ ورک سے متعلق کسٹمر سپورٹ سے رابطہ کریں۔ کسٹمر سپورٹ کے لیے ہر اس آفر وال پر ایک الگ سیکشن ہے جس تک آپ رسائی حاصل کرتے ہیں۔ ہمیشہ اس بات کو یقینی بنائیں کہ جب بھی آپ کوئی سنگ میل مکمل کرتے ہیں تو آپ ہماری ایپ کے اندر آفر والز کو چیک کرتے ہیں تاکہ یہ یقینی بنایا جا سکے کہ اسے ٹریک کیا گیا ہے۔';
 			case 'offersGuidline9': return '9)۔ اگر آپ گیم/ایپ کی پیشکش میں دلچسپی رکھتے ہیں، لیکن آپ نے پہلے وہ گیم/ایپ اپنے آلے میں انسٹال کر رکھی تھی، تو براہ کرم اس ایپ/گیم سے متعلق پیشکش کی کوشش نہ کریں۔ ہو سکتا ہے آپ کو اپنی سرگرمی کا کریڈٹ نہ ملے۔';
 			case 'offersGuidline10': return '10)۔ ہر آفر وال کی طرف سے فراہم کردہ تجاویز کو ہمیشہ پڑھیں۔ ان میں اکثر اہم تفصیلات ہوتی ہیں جو آپ کے تمام پیشکشوں میں کامیاب ٹریکنگ کے امکانات کو بڑھانے میں مدد کر سکتی ہیں۔';
+			case 'termination': return 'ختم کرنا';
+			case 'thisPeriodsSettlementIsterminated': return 'اس مدت کی تصفیہ ختم!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'غیر فعال صارف '),
+				x,
+			]);
+			case 'remind': return 'یاد دلانا!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'آف لائن یاد دہانی 8 گھنٹے کے اندر صرف ایک بار عمل میں لائی جا سکتی ہے! براہ کرم ${x} سیکنڈ انتظار کریں اور دوبارہ کوشش کریں۔';
+			case 'noInactiveUsersFoundNow': return 'کوئی غیر فعال صارف نہیں ملا';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} لوگوں کو کامیابی سے مطلع کر دیا گیا ہے!';
+			case 'deltansMiningReminder': return 'Deltans کان کنی کی یاد دہانی!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'ڈیلٹا دوست ${user}: "آپ کی کان کنی رک گئی ہے۔"';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'ڈیلٹا ایپ پر آپ نے جو نمبر درج کیا تھا وہ ('),
+				fillin,
+				const TextSpan(text: ') تھا، لیکن آپ نے تصدیقی اسٹرنگ بھیجنے کے لیے جو نمبر استعمال کیا وہ ('),
+				sender,
+				const TextSpan(text: ') تھا۔ براہ کرم اسے ایڈجسٹ کریں اور دوبارہ کوشش کریں۔'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'ڈکرپشن کی خرابی، براہ کرم دوبارہ کوشش کریں!';
+			case 'reLogin': return 'دوبارہ لاگ ان کریں۔';
 			default: return null;
 		}
 	}
@@ -35139,6 +36126,27 @@ extension on _StringsVi {
 			case 'offersGuidline8': return '8). Các mốc/nhiệm vụ bạn đã hoàn thành thường được ghi nhận trên các tường đề xuất trong vòng vài phút sau khi hoàn thành, nhưng trong một số trường hợp, có thể mất đến ba giờ, vì vậy hãy kiên nhẫn. Nếu mốc không được ghi nhận, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của mạng lưới Offerwall. Có một mục riêng dành cho Hỗ trợ Khách hàng trên mỗi Offerwall bạn truy cập. Luôn đảm bảo bạn kiểm tra tường đề xuất trong ứng dụng của chúng tôi mỗi khi hoàn thành một mốc để đảm bảo nó đã được theo dõi.';
 			case 'offersGuidline9': return '9). Trong trường hợp bạn quan tâm đến một ưu đãi trò chơi/ứng dụng nhưng đã cài đặt trò chơi/ứng dụng đó trên thiết bị trước đó, vui lòng không thử ưu đãi liên quan đến ứng dụng/trò chơi đó. Hoạt động của bạn có thể sẽ không được ghi nhận.';
 			case 'offersGuidline10': return '10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi.';
+			case 'termination': return 'Chấm dứt';
+			case 'thisPeriodsSettlementIsterminated': return 'Việc thanh toán trong giai đoạn này đã kết thúc!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: 'Người dùng không hoạt động '),
+				x,
+			]);
+			case 'remind': return 'nhắc lại!';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => 'Lời nhắc ngoại tuyến chỉ có thể được thực hiện một lần trong vòng 8 giờ! Vui lòng đợi ${x} giây và thử lại.';
+			case 'noInactiveUsersFoundNow': return 'Không tìm thấy người dùng không hoạt động';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '${x} người đã được thông báo thành công!';
+			case 'deltansMiningReminder': return 'Nhắc nhở về khai thác Deltans!';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta friend ${user}: "Hoạt động khai thác của bạn đã dừng lại."';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: 'Số bạn đã nhập trên ứng dụng Delta là ('),
+				fillin,
+				const TextSpan(text: '), nhưng số bạn dùng để gửi chuỗi xác minh là ('),
+				sender,
+				const TextSpan(text: '). Vui lòng điều chỉnh số này và thử lại.'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return 'Có lỗi giải mã, vui lòng thử lại!';
+			case 'reLogin': return 'Đăng nhập lại';
 			default: return null;
 		}
 	}
@@ -35859,6 +36867,27 @@ extension on _StringsZhCn {
 			case 'offersGuidline8': return '8). 您完成的里程碑/任务通常会在几分钟内记录在积分墙上，但在某些情况下，可能需要长达三个小时，因此请耐心等待。如果里程碑未记录，请联系积分墙网络的客服。您访问的每个积分墙上都有单独的客服专区。每次完成里程碑后，请务必在我们的应用程序中查看积分墙，以确保其已被追踪。';
 			case 'offersGuidline9': return '9). 如果您对某个游戏/应用的优惠感兴趣，但您的设备之前已安装该游戏/应用，请勿尝试与该应用/游戏相关的优惠。您可能无法获得相应活动积分。';
 			case 'offersGuidline10': return '10). 务必阅读每个 Offerwall 提供的提示。这些提示通常包含关键细节，可以帮助您最大限度地提高成功追踪优惠的机会。';
+			case 'termination': return '终止';
+			case 'thisPeriodsSettlementIsterminated': return '本期结算结算终止!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '不活跃用户'),
+				x,
+			]);
+			case 'remind': return '提醒！';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => '8小时内只能执行一次离线提醒！请再等待${x}秒之后再试。';
+			case 'noInactiveUsersFoundNow': return '现在没发现不活跃用户';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '已成功通知${x}人！';
+			case 'deltansMiningReminder': return 'Deltans挖矿提醒！';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta好友${user}：“您的挖矿已停止.”';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: '您在 Delta 应用程序上输入的号码是 ('),
+				fillin,
+				const TextSpan(text: ')，但您发送验证字符串时使用的号码是 ('),
+				sender,
+				const TextSpan(text: ')。请调整后重试。'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return '解密出错，请重试！';
+			case 'reLogin': return '重新登录';
 			default: return null;
 		}
 	}
@@ -36579,6 +37608,27 @@ extension on _StringsZhTw {
 			case 'offersGuidline8': return '8). 您完成的里程碑/任務通常會在幾分鐘內記錄在積分牆上，但在某些情況下，可能需要長達三個小時，因此請耐心等待。若里程碑未記錄，請聯絡積分牆網路的客服。您造訪的每個積分牆上都有單獨的客服專區。每次完成里程碑後，請務必在我們的應用程式中查看積分牆，以確保其已被追蹤。';
 			case 'offersGuidline9': return '9). 如果您對某個遊戲/應用程式的優惠感興趣，但您的裝置之前已安裝該遊戲/應用，請勿嘗試與該應用程式/遊戲相關的優惠。您可能無法獲得相應活動積分。';
 			case 'offersGuidline10': return '10). 務必閱讀每個 Offerwall 提供的提示。這些提示通常包含關鍵細節，可以幫助您最大限度地提高成功追蹤優惠的機會。';
+			case 'termination': return '終止';
+			case 'thisPeriodsSettlementIsterminated': return '本期結算結算終止!';
+			case 'inactiveUsersX': return ({required InlineSpan x}) => TextSpan(children: [
+				const TextSpan(text: '不活躍用戶'),
+				x,
+			]);
+			case 'remind': return '提醒！';
+			case 'offlineReminderOnlyOnce8hours_please': return ({required Object x}) => '8小時內只能執行一次離線提醒！請再等待${x}秒之後再試。';
+			case 'noInactiveUsersFoundNow': return '現在沒發現不活躍用戶';
+			case 'successfullyNotifiedXpeople': return ({required Object x}) => '已成功通知${x}人！';
+			case 'deltansMiningReminder': return 'Deltans挖礦提醒！';
+			case 'deltaFriendX_yourMiningHasStopped': return ({required Object user}) => 'delta好友${user}：“您的挖礦已停止.”';
+			case 'inputAndActualNumberDoNotMatch': return ({required InlineSpan fillin, required InlineSpan sender}) => TextSpan(children: [
+				const TextSpan(text: '您在 Delta 應用程式上輸入的號碼是 ('),
+				fillin,
+				const TextSpan(text: ')，但您發送驗證字串時使用的號碼是 ('),
+				sender,
+				const TextSpan(text: ')。請調整後重試。'),
+			]);
+			case 'decryptionError_pleaseTryAgain': return '解密出錯，請重試！';
+			case 'reLogin': return '重新登入';
 			default: return null;
 		}
 	}

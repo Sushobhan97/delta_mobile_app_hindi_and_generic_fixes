@@ -608,5 +608,17 @@
 	"offersGuidline7": "7). PlayTime hutoa mseto wa kipekee wa ofa za mchezo ambapo watumiaji hutuzwa kwa kutumia tu muda katika michezo yote. Hata hivyo, tafadhali hakikisha kuwa unaendelea kupitia viwango vya michezo hii yote badala ya kuua tu wakati au mtangazaji anaweza kutengua malipo (ingawa ni nadra).",
 	"offersGuidline8": "8). Mafanikio/majukumu yanayokamilishwa na wewe kwa kawaida husajiliwa kote kwenye kuta ndani ya dakika chache baada ya kukamilika, lakini katika hali fulani, inaweza kuchukua hadi saa tatu, kwa hivyo tafadhali kuwa na subira katika hali kama hizi. Ikiwa hatua muhimu haitasajiliwa, tafadhali wasiliana na usaidizi kwa wateja unaohusiana na mtandao wa Offerwall. Kuna sehemu tofauti ya Usaidizi kwa Wateja katika kila Ofa unayofikia. Daima hakikisha unaangalia kuta za ofa ndani ya programu yetu kila mara unapomaliza hatua muhimu ili kuhakikisha kuwa imefuatiliwa.",
 	"offersGuidline9": "9). Iwapo ungependa kupata ofa ya mchezo/programu, lakini hapo awali ulikuwa na mchezo/programu hiyo iliyosakinishwa kwenye kifaa chako, tafadhali usijaribu toleo linalohusiana na programu/mchezo huo. Huenda usipewe sifa kwa shughuli yako.",
-	"offersGuidline10": "10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote."
+	"offersGuidline10": "10). Soma kila mara vidokezo vinavyotolewa na kila Offerwall. Mara nyingi huwa na maelezo muhimu ambayo yanaweza kukusaidia kuongeza uwezekano wako wa kufuatilia kwa mafanikio matoleo yote.",
+	"termination": "Kukomesha",
+	"thisPeriodsSettlementIsterminated": "Suluhu ya kipindi hiki imekatishwa!",
+	"inactiveUsersX(rich)": "Mtumiaji asiyetumika ${x}",
+	"remind": "kumbusha!",
+	"offlineReminderOnlyOnce8hours_please": "Kikumbusho cha nje ya mtandao kinaweza tu kutekelezwa mara moja ndani ya saa 8! Tafadhali subiri sekunde ${x} na ujaribu tena.",
+	"noInactiveUsersFoundNow": "Hakuna watumiaji wasiotumia waliopatikana",
+	"successfullyNotifiedXpeople": "Watu ${x} wamearifiwa!",
+	"deltansMiningReminder": "Kikumbusho cha Madini ya Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "rafiki wa delta ${user}: \"Uchimbaji madini wako umekoma.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Nambari uliyoweka kwenye programu ya Delta ilikuwa (${fillin}), lakini nambari uliyotuma mfuatano wako wa uthibitishaji ilikuwa (${sender}). Tafadhali rekebisha hii na ujaribu tena.",
+	"decryptionError_pleaseTryAgain": "Hitilafu ya usimbuaji, tafadhali jaribu tena!",
+	"reLogin": "Ingia tena"
 }

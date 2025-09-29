@@ -1,0 +1,41 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "delta-kim",
+                    "appId": "1:1053215052368:android:8e36e32155a5982a543755",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "delta-kim",
+                    "appId": "1:1053215052368:ios:462f7098f9c52798543755",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "delta-kim",
+                    "configurations": {
+                        "android": "1:1053215052368:android:8e36e32155a5982a543755",
+                        "ios": "1:1053215052368:ios:462f7098f9c52798543755",
+                        "macos": "1:1053215052368:ios:462f7098f9c52798543755",
+                        "web": "1:1053215052368:web:10ee5c09aa1e6854543755",
+                        "windows": "1:1053215052368:web:eec459e1c6a6a204543755"
+                    }
+                }
+            },
+            "macos": {
+                "default": {
+                    "projectId": "delta-kim",
+                    "appId": "1:1053215052368:ios:462f7098f9c52798543755",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "macos/Runner/GoogleService-Info.plist"
+                }
+            }
+        }
+    }
+}

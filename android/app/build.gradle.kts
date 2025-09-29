@@ -3,9 +3,14 @@ import java.util.Properties
 
 plugins {
     id("com.android.application")
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services")
+    // END: FlutterFire Configuration
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+    //id("com.mob.sdk")
+    //id("cn.fly.sdk")
 }
 
 // 加载本地属性
@@ -30,7 +35,7 @@ val flutterVersionName = localProperties.getProperty("flutter.versionName") ?: "
 android {
     namespace = "kim.delta.mobile"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973" //flutter.ndkVersion
+    ndkVersion = flutter.ndkVersion //"27.0.12077973" 
 
     // packaging {
     //     jniLibs {
@@ -88,6 +93,7 @@ android {
             isMinifyEnabled = true  // Kotlin DSL 使用 isMinifyEnabled
             isShrinkResources = true  // Kotlin DSL 使用 isShrinkResources
             signingConfig = signingConfigs.getByName("release")  // 使用 getByName()
+            //signingConfig = signingConfigs.getByName("debug")  // 使用 getByName()
             
             // 如果需要配置 ProGuard
              proguardFiles(
@@ -128,4 +134,22 @@ flutter {
 dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4") // flutter_local_notifications 插件 脱糖用
     implementation("com.google.code.gson:gson:2.10.1")
+    implementation(platform("com.google.firebase:firebase-bom:34.2.0"))
+
+  // TODO: Add the dependencies for Firebase products you want to use
+  // When using the BoM, don't specify versions in Firebase dependencies
+    implementation("com.google.firebase:firebase-analytics")
 }
+
+// FlySDK {
+//     appKey = "3bdc0380c306b"
+//     appSecret = "5634956101fa202a112fa9215a61a5ef"
+//     MobPush {
+//          MobPush {
+//             FCM {
+//                 iconRes "@mipmap/default_ic_launcher"
+//             }
+//          }
+//     }
+// }
+

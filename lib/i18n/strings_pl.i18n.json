@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime oferuje unikalną mieszankę gier, w których użytkownicy są nagradzani za samo spędzanie czasu w grach. Należy jednak pamiętać o tym, aby przechodzić kolejne poziomy w tych grach, a nie tylko zabijać czas, w przeciwnym razie reklamodawca może cofnąć wypłatę (choć zdarza się to rzadko).",
 	"offersGuidline8": "8). Kamienie milowe/zadania, które ukończyłeś/ukończyłaś, są zazwyczaj rejestrowane na Offerwallach w ciągu kilku minut od ich ukończenia, ale w niektórych przypadkach może to potrwać do trzech godzin, dlatego prosimy o cierpliwość. Jeśli kamień milowy nie zostanie zarejestrowany, skontaktuj się z obsługą klienta sieci Offerwall. W każdej witrynie Offerwall, do której uzyskujesz dostęp, znajduje się osobna sekcja obsługi klienta. Zawsze sprawdzaj Offerwalle w naszej aplikacji po każdym ukończeniu kamienia milowego, aby upewnić się, że został on zarejestrowany.",
 	"offersGuidline9": "9). Jeśli jesteś zainteresowany ofertą gry/aplikacji, ale miałeś ją wcześniej zainstalowaną na swoim urządzeniu, nie próbuj skorzystać z oferty dotyczącej tej gry/aplikacji. Możesz nie otrzymać punktów za swoją aktywność.",
-	"offersGuidline10": "10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert."
+	"offersGuidline10": "10). Zawsze czytaj wskazówki zawarte na każdej ścianie ofert. Często zawierają one kluczowe szczegóły, które pomogą Ci zmaksymalizować szanse na skuteczne śledzenie ofert.",
+	"termination": "Zakończenie",
+	"thisPeriodsSettlementIsterminated": "Rozliczenie tego okresu zostało zakończone!",
+	"inactiveUsersX(rich)": "Nieaktywny użytkownik ${x}",
+	"remind": "przypomnieć!",
+	"offlineReminderOnlyOnce8hours_please": "Przypomnienie offline można wykonać tylko raz w ciągu 8 godzin! Odczekaj ${x} sekund i spróbuj ponownie.",
+	"noInactiveUsersFoundNow": "Nie znaleziono nieaktywnych użytkowników",
+	"successfullyNotifiedXpeople": "${x} osób zostało pomyślnie powiadomionych!",
+	"deltansMiningReminder": "Przypomnienie o górnictwie Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Twoje wydobycie zostało zatrzymane.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Numer, który podałeś w aplikacji Delta, to (${fillin}), ale numer, z którego wysłałeś ciąg weryfikacyjny, to (${sender}). Popraw to i spróbuj ponownie.",
+	"decryptionError_pleaseTryAgain": "Błąd deszyfrowania, spróbuj ponownie!",
+	"reLogin": "Zaloguj się ponownie"
 }

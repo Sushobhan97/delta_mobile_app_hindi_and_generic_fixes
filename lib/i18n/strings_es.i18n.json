@@ -609,5 +609,17 @@
 	"offersGuidline7": "7) PlayTime ofrece una combinación única de ofertas de juegos donde los usuarios reciben recompensas simplemente por jugar. Sin embargo, asegúrate de progresar en los niveles de estos juegos en lugar de simplemente pasar el rato; de lo contrario, el anunciante podría revertir el pago (aunque es poco frecuente).",
 	"offersGuidline8": "8) Los hitos o tareas que completes suelen registrarse en los Offerwalls en cuestión de minutos, pero en algunos casos puede tardar hasta tres horas, así que ten paciencia. Si el hito no se registra, contacta con el servicio de atención al cliente de la red Offerwall. Hay una sección independiente para el servicio de atención al cliente en cada Offerwall al que accedas. Asegúrate de consultar los Offerwalls en nuestra app cada vez que completes un hito para asegurarte de que se haya registrado.",
 	"offersGuidline9": "9) Si te interesa una oferta de un juego o aplicación, pero ya la tenías instalada en tu dispositivo, no intentes usarla. Es posible que no se te acredite tu actividad.",
-	"offersGuidline10": "10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas."
+	"offersGuidline10": "10) Lea siempre los consejos de cada Offerwall. Suelen contener detalles cruciales que pueden ayudarle a maximizar sus posibilidades de éxito en el seguimiento de las ofertas.",
+	"termination": "Terminación",
+	"thisPeriodsSettlementIsterminated": "¡La liquidación de este período ha finalizado!",
+	"inactiveUsersX(rich)": "Usuario inactivo ${x}",
+	"remind": "¡recordar!",
+	"offlineReminderOnlyOnce8hours_please": "El recordatorio sin conexión solo se puede ejecutar una vez cada 8 horas. Espere ${x} segundos y vuelva a intentarlo.",
+	"noInactiveUsersFoundNow": "No se encontraron usuarios inactivos",
+	"successfullyNotifiedXpeople": "¡${x} personas han sido notificadas exitosamente!",
+	"deltansMiningReminder": "¡Recordatorio de minería de Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "amigo delta ${user}: \"Tu minería se ha detenido.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "El número que ingresaste en la aplicación Delta fue (${fillin}), pero el número desde el que enviaste tu verificación fue (${sender}). Ajústalo y vuelve a intentarlo.",
+	"decryptionError_pleaseTryAgain": "Error de descifrado, ¡inténtalo de nuevo!",
+	"reLogin": "Iniciar sesión de nuevo"
 }

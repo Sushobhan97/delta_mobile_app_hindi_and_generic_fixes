@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime bietet eine einzigartige Mischung aus Spielangeboten, bei denen Nutzer für ihre Zeit in den Spielen belohnt werden. Achten Sie jedoch darauf, dass Sie in den Spielen auch Levels erreichen und nicht nur Zeit totschlagen. Andernfalls kann der Werbetreibende die Auszahlung rückgängig machen (was jedoch selten vorkommt).",
 	"offersGuidline8": "8). Die von Ihnen abgeschlossenen Meilensteine/Aufgaben werden in der Regel innerhalb weniger Minuten nach Abschluss in den Offerwalls registriert. In Einzelfällen kann es jedoch bis zu drei Stunden dauern. Bitte haben Sie in solchen Fällen Geduld. Sollte der Meilenstein nicht registriert werden, wenden Sie sich bitte an den Kundensupport des Offerwall-Netzwerks. Für jede Offerwall, auf die Sie zugreifen, gibt es einen separaten Bereich für den Kundensupport. Überprüfen Sie die Offerwalls in unserer App nach jedem abgeschlossenen Meilenstein, um sicherzustellen, dass dieser erfasst wurde.",
 	"offersGuidline9": "9). Falls Sie an einem Spiel-/App-Angebot interessiert sind, dieses Spiel/diese App aber bereits auf Ihrem Gerät installiert haben, versuchen Sie bitte nicht, das entsprechende Angebot in Anspruch zu nehmen. Möglicherweise erhalten Sie für Ihre Aktivität keine Gutschrift.",
-	"offersGuidline10": "10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren."
+	"offersGuidline10": "10). Lesen Sie immer die Tipps der einzelnen Offerwalls. Sie enthalten oft wichtige Details, die Ihnen helfen können, Ihre Chancen auf ein erfolgreiches Tracking der Angebote zu maximieren.",
+	"termination": "Beendigung",
+	"thisPeriodsSettlementIsterminated": "Die Abrechnung für diesen Zeitraum ist beendet!",
+	"inactiveUsersX(rich)": "Inaktiver Benutzer ${x}",
+	"remind": "erinnern!",
+	"offlineReminderOnlyOnce8hours_please": "Die Offline-Erinnerung kann nur einmal innerhalb von 8 Stunden ausgeführt werden! Bitte warten Sie ${x} Sekunden und versuchen Sie es erneut.",
+	"noInactiveUsersFoundNow": "Keine inaktiven Benutzer gefunden",
+	"successfullyNotifiedXpeople": "${x} Personen wurden erfolgreich benachrichtigt!",
+	"deltansMiningReminder": "Deltans Mining-Erinnerung!",
+	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Ihr Mining wurde gestoppt.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Die Nummer, die Sie in der Delta-App eingegeben haben, war (${fillin}), aber die Nummer, von der Sie Ihre Bestätigungszeichenfolge gesendet haben, war (${sender}). Bitte korrigieren Sie diese Nummer und versuchen Sie es erneut.",
+	"decryptionError_pleaseTryAgain": "Entschlüsselungsfehler, bitte versuchen Sie es erneut!",
+	"reLogin": "Melden Sie sich erneut an"
 }

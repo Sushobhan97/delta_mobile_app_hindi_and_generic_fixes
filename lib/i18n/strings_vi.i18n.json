@@ -609,5 +609,17 @@
 	"offersGuidline7": "7). PlayTime cung cấp một sự kết hợp độc đáo các ưu đãi trò chơi, nơi người dùng được thưởng chỉ bằng cách dành thời gian chơi. Tuy nhiên, hãy đảm bảo rằng bạn cũng đang tiến bộ qua các cấp độ của trò chơi thay vì chỉ giết thời gian, nếu không nhà quảng cáo có thể đảo ngược khoản thanh toán (mặc dù trường hợp này rất hiếm).",
 	"offersGuidline8": "8). Các mốc/nhiệm vụ bạn đã hoàn thành thường được ghi nhận trên các tường đề xuất trong vòng vài phút sau khi hoàn thành, nhưng trong một số trường hợp, có thể mất đến ba giờ, vì vậy hãy kiên nhẫn. Nếu mốc không được ghi nhận, vui lòng liên hệ với bộ phận hỗ trợ khách hàng của mạng lưới Offerwall. Có một mục riêng dành cho Hỗ trợ Khách hàng trên mỗi Offerwall bạn truy cập. Luôn đảm bảo bạn kiểm tra tường đề xuất trong ứng dụng của chúng tôi mỗi khi hoàn thành một mốc để đảm bảo nó đã được theo dõi.",
 	"offersGuidline9": "9). Trong trường hợp bạn quan tâm đến một ưu đãi trò chơi/ứng dụng nhưng đã cài đặt trò chơi/ứng dụng đó trên thiết bị trước đó, vui lòng không thử ưu đãi liên quan đến ứng dụng/trò chơi đó. Hoạt động của bạn có thể sẽ không được ghi nhận.",
-	"offersGuidline10": "10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi."
+	"offersGuidline10": "10). Luôn đọc kỹ các mẹo được cung cấp bởi mỗi Offerwall. Chúng thường chứa các chi tiết quan trọng có thể giúp tối đa hóa cơ hội theo dõi thành công các ưu đãi.",
+	"termination": "Chấm dứt",
+	"thisPeriodsSettlementIsterminated": "Việc thanh toán trong giai đoạn này đã kết thúc!",
+	"inactiveUsersX(rich)": "Người dùng không hoạt động ${x}",
+	"remind": "nhắc lại!",
+	"offlineReminderOnlyOnce8hours_please": "Lời nhắc ngoại tuyến chỉ có thể được thực hiện một lần trong vòng 8 giờ! Vui lòng đợi ${x} giây và thử lại.",
+	"noInactiveUsersFoundNow": "Không tìm thấy người dùng không hoạt động",
+	"successfullyNotifiedXpeople": "${x} người đã được thông báo thành công!",
+	"deltansMiningReminder": "Nhắc nhở về khai thác Deltans!",
+	"deltaFriendX_yourMiningHasStopped": "delta friend ${user}: \"Hoạt động khai thác của bạn đã dừng lại.\"",
+	"inputAndActualNumberDoNotMatch(rich)": "Số bạn đã nhập trên ứng dụng Delta là (${fillin}), nhưng số bạn dùng để gửi chuỗi xác minh là (${sender}). Vui lòng điều chỉnh số này và thử lại.",
+	"decryptionError_pleaseTryAgain": "Có lỗi giải mã, vui lòng thử lại!",
+	"reLogin": "Đăng nhập lại"
 }
